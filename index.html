@@ -26,17 +26,40 @@
     fetch('data.json')
       .then(response => response.json())
       .then(data => {
+        console.log('Loaded data:', data); // Log the loaded data
+
         data.forEach(campsite => {
+          console.log('Processing campsite:', campsite); // Log each campsite
+
+          // Validate latitude and longitude
+          const lat = parseFloat(campsite.Latitude);
+          const lng = parseFloat(campsite.Longitude);
+
+          if (isNaN(lat) || isNaN(lng)) {
+            console.error(`Invalid coordinates for ${campsite.Name}: Latitude=${lat}, Longitude=${lng}`);
+            return;
+          }
+
           // Add a marker for each campsite
-          const marker = L.marker([campsite.Latitude, campsite.Longitude]).addTo(map);
+          const marker = L.marker([lat, lng]).addTo(map);
+
+          // Handle Address safely
+          const address = campsite.Address ? campsite.Address : 'Address not available';
+
+          // Handle YouTubeLinks safely
+          let youtubeLinksHtml = '';
+          if (campsite.YouTubeLinks && typeof campsite.YouTubeLinks === 'string') {
+            youtubeLinksHtml = campsite.YouTubeLinks.split(',').map(link => `<a href="${link.trim()}" target="_blank">${link.trim()}</a>`).join('<br>');
+          } else {
+            youtubeLinksHtml = 'No YouTube videos available';
+          }
 
           // Create popup content
-          const youtubeLinks = campsite.YouTubeLinks.split(',').map(link => `<a href="${link}" target="_blank">${link}</a>`).join('<br>');
           const popupContent = `
             <strong>${campsite.Name}</strong><br>
-            Address: ${campsite.Address}<br>
-            Coordinates: ${campsite.Latitude}, ${campsite.Longitude}<br>
-            YouTube Videos:<br>${youtubeLinks}
+            Address: ${address}<br>
+            Coordinates: ${lat}, ${lng}<br>
+            YouTube Videos:<br>${youtubeLinksHtml}
           `;
 
           // Bind popup to the marker
