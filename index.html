@@ -9,10 +9,18 @@
     <!-- Leaflet.markercluster CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Awesomplete for Autocomplete -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.css">
     <style>
-        #map { height: 600px; }
+        /* Responsive Map */
+        #map {
+            height: 100vh; /* Full viewport height */
+            width: 100%; /* Full width */
+        }
 
-        /* Style for labeled markers (just text) */
+        /* Style for labeled markers (just text with icons) */
         .labeled-marker {
             font-size: 14px; /* Adjust font size */
             font-weight: bold; /* Make text bold */
@@ -27,6 +35,29 @@
             transform: scale(1.1); /* Slightly enlarge the text on hover */
             transition: transform 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth transition */
         }
+
+        /* Customize cluster appearance */
+        .cluster {
+            background-color: #007BFF; /* Blue background */
+            color: white; /* White text */
+            border-radius: 50%; /* Circular shape */
+            font-size: 16px; /* Larger font for numbers */
+            font-weight: bold;
+            padding: 10px; /* Padding around the number */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for better visibility */
+        }
+
+        /* Legend Styling */
+        #legend {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1000; /* Ensure it stays above the map */
+        }
     </style>
 </head>
 <body>
@@ -40,10 +71,20 @@
     <!-- Map -->
     <div id="map"></div>
 
+    <!-- Legend -->
+    <div id="legend">
+        <p><span style="color: #4CAF50; font-weight: bold;">●</span> Park</p>
+        <p><span style="color: #2196F3; font-weight: bold;">●</span> Lake</p>
+        <p><span style="color: #8BC34A; font-weight: bold;">●</span> Forest</p>
+        <p><span style="color: #FF9800; font-weight: bold;">●</span> Other</p>
+    </div>
+
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <!-- Leaflet.markercluster JS -->
     <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <!-- Awesomplete JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.js"></script>
     <script>
         // Initialize the map
         var map = L.map('map').setView([3.0, 101.5], 10); // Centered on Selangor
@@ -63,6 +104,12 @@
                 // Store the campsites globally so we can use them for searching
                 window.campsites = data;
 
+                // Add autocomplete suggestions to the search box
+                const campsiteNames = data.map(campsite => campsite.Name);
+                new Awesomplete(document.getElementById('search-box'), {
+                    list: campsiteNames
+                });
+
                 // Add markers to the map using the data
                 addMarkersToMap(data);
             })
@@ -79,9 +126,21 @@
                     <b>Contact:</b> ${campsite.ContactNumber}
                 `;
 
-                // Create a custom HTML marker with just the campsite name (no box)
+                // Determine the marker color based on location
+                let markerClass = 'default'; // Default color
+                if (campsite.Location.toLowerCase().includes('park')) {
+                    markerClass = 'park';
+                } else if (campsite.Location.toLowerCase().includes('lake')) {
+                    markerClass = 'lake';
+                } else if (campsite.Location.toLowerCase().includes('forest')) {
+                    markerClass = 'forest';
+                }
+
+                // Create a custom HTML marker with an icon and the campsite name
                 var customMarkerHtml = `
-                    <div class="labeled-marker">${campsite.Name}</div>
+                    <div class="labeled-marker" style="color: ${getColor(markerClass)};">
+                        <i class="fas fa-campground"></i> ${campsite.Name}
+                    </div>
                 `;
 
                 // Use a divIcon to create a custom marker
@@ -102,6 +161,16 @@
             map.addLayer(markerCluster);
         }
 
+        // Helper function to get marker color based on class
+        function getColor(markerClass) {
+            switch (markerClass) {
+                case 'park': return '#4CAF50'; // Green
+                case 'lake': return '#2196F3'; // Blue
+                case 'forest': return '#8BC34A'; // Light green
+                default: return '#FF9800'; // Orange
+            }
+        }
+
         // Search functionality
         document.getElementById('search-button').addEventListener('click', () => {
             const query = document.getElementById('search-box').value.toLowerCase(); // Get the search query
@@ -114,6 +183,18 @@
                 // Zoom to the first result (you can modify this to handle multiple results)
                 const firstResult = results[0];
                 map.setView([firstResult.Latitude, firstResult.Longitude], 15); // Zoom in to the location
+
+                // Highlight the matching marker
+                markerCluster.eachLayer(layer => {
+                    if (layer.getLatLng().lat === firstResult.Latitude && layer.getLatLng().lng === firstResult.Longitude) {
+                        layer.setIcon(L.divIcon({
+                            className: '',
+                            html: `<div class="labeled-marker" style="color: red; font-weight: bold;"><i class="fas fa-campground"></i> ${firstResult.Name}</div>`,
+                            iconSize: [null, null]
+                        }));
+                    }
+                });
+
                 alert(`Found: ${firstResult.Name}`);
             } else {
                 alert('No matching campsites found.');
