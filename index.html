@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selangor Campsites Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Map of Campsites in Selangor</h1>
+  <div id="map"></div>
+
+  <!-- Load Leaflet.js -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Initialize the map
+    const map = L.map('map').setView([3.0738, 101.5183], 10); // Center of Selangor
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Load campsite data from JSON
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(campsite => {
+          // Add a marker for each campsite
+          const marker = L.marker([campsite.Latitude, campsite.Longitude]).addTo(map);
+
+          // Create popup content
+          const youtubeLinks = campsite.YouTubeLinks.split(',').map(link => `<a href="${link}" target="_blank">${link}</a>`).join('<br>');
+          const popupContent = `
+            <strong>${campsite.Name}</strong><br>
+            Address: ${campsite.Address}<br>
+            Coordinates: ${campsite.Latitude}, ${campsite.Longitude}<br>
+            YouTube Videos:<br>${youtubeLinks}
+          `;
+
+          // Bind popup to the marker
+          marker.bindPopup(popupContent);
+        });
+      })
+      .catch(error => console.error('Error loading data:', error));
+  </script>
+</body>
+</html>

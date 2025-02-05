@@ -1,0 +1,2192 @@
+[
+ {
+   "FIELD1": 1,
+   "Campsite Name": "2K HOTSPIRNGS CAMPSITE",
+   "Location": "ULU YAM BARU",
+   "Latitude": 3.426102551,
+   "Longitude": 101.6827892,
+   "Address": "Ladang Bundora, JLN, Jalan Kampung Ulu Kalong, Hulu Yam Bharu, ",
+   "Contact": "0193384008",
+   "Youtube": "https://youtu.be/6f9W2o9Mlag?si=kw0YT5gdUxcbBniF"
+ },
+ {
+   "FIELD1": 2,
+   "Campsite Name": "A.S.B CAMPSITE(Anak Selangor Berhad)",
+   "Location": "ULU YAM",
+   "Latitude": 3.405736854,
+   "Longitude": 101.6833555,
+   "Address": "Jln Kampung Gurney, 44300 Batang Kali, Selangor",
+   "Contact": "0178761566",
+   "Youtube": "https://youtu.be/xyQ3_7w6q68?si=z9TPb74RR69uIFO9"
+ },
+ {
+   "FIELD1": 3,
+   "Campsite Name": "ABAH LEGACY SENDAT CAMP",
+   "Location": "ULU YAM",
+   "Latitude": 3.408738613,
+   "Longitude": 101.6817407,
+   "Address": "Jalan Kampong Gurney",
+   "Contact": "013 232 1745",
+   "Youtube": "https://youtu.be/tlSGYiso0tw?si=I01Xt8a30Z2ek7KR"
+ },
+ {
+   "FIELD1": 4,
+   "Campsite Name": "AIR LIUT PERTAK",
+   "Location": "KUALA KUBU BARU",
+   "Latitude": 3.569037869,
+   "Longitude": 101.7396661,
+   "Address": "Jalan Pertak - Pahang Pertak, 44000 Kuala Kubu Baru, Selangor",
+   "Contact": "0192035687",
+   "Youtube": "https://youtu.be/a0rasFo-Qpo?si=EUliOdauotI7LqTo"
+ },
+ {
+   "FIELD1": 5,
+   "Campsite Name": "ALI RIVER CAMPSITE",
+   "Location": "KERLING",
+   "Latitude": 3.618576594,
+   "Longitude": 101.6110609,
+   "Address": "Kampung Air Panas, 44000 Kerling, Selangor",
+   "Contact": "0192649408",
+   "Youtube": "https://youtu.be/WDXRM4Iua1k?si=Vpvmdh7w25CcCGz0"
+ },
+ {
+   "FIELD1": 6,
+   "Campsite Name": "AIR PANAS KERLING",
+   "Location": "KERLING",
+   "Latitude": 3.611393459,
+   "Longitude": 101.6115282,
+   "Address": "Jalan Kolam Air Panas, 44000 Kerling, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/I7pD85duk3c?si=uFkmXcnsA7uH0lf-"
+ },
+ {
+   "FIELD1": 7,
+   "Campsite Name": "ANA MAN CAMPSITE",
+   "Location": "GENTING H'LANDS",
+   "Latitude": 3.441103174,
+   "Longitude": 101.6923048,
+   "Address": "Jln Batang Kali - Genting Highlands, 44300, Selangor",
+   "Contact": "0196647069",
+   "Youtube": "https://youtu.be/EyYb3ZUJV1Q?si=E7imHKoph9rA1tRW"
+ },
+ {
+   "FIELD1": 8,
+   "Campsite Name": "ANOM CAMPSITE",
+   "Location": "KERLING",
+   "Latitude": 3.641137509,
+   "Longitude": 101.587568,
+   "Address": "Jalan Kampung Pasir Putih, Kerling ",
+   "Contact": null,
+   "Youtube": "https://youtu.be/HPHkHUwR0yU?si=LHiJPkuMK5nvwHtJ"
+ },
+ {
+   "FIELD1": 9,
+   "Campsite Name": "ATASAN NATURE RETREAT",
+   "Location": "HULU RENING",
+   "Latitude": 3.490986026,
+   "Longitude": 101.6832384,
+   "Address": "Atasan Nature Retreat, Kampung Ulu Rening, 44300 Batang Kali, Selangor",
+   "Contact": "0193555647",
+   "Youtube": "https://youtu.be/8KuaNAuQds0?si=MEK2U-5ybnqSNmai"
+ },
+ {
+   "FIELD1": 10,
+   "Campsite Name": "BEACON RESORT (REFRESHING SPRINGS)",
+   "Location": "KERLING",
+   "Latitude": 3.633863453,
+   "Longitude": 101.5886471,
+   "Address": "PT 4049, Mukim Sungai Gumut,, Kampung Gumut Tambahan, 44100 Kerling,",
+   "Contact": "0198333378",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 11,
+   "Campsite Name": "BETING RIMBAYU CAMPSITE",
+   "Location": "KUALA KUBU BARU",
+   "Latitude": 3.543882359,
+   "Longitude": 101.68007,
+   "Address": "Ampang Pecah, Kuala Kubu Baru",
+   "Contact": "0172586186(YEOP)",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 12,
+   "Campsite Name": "BRIGHT STONE SERENDAH",
+   "Location": "SERENDAH",
+   "Latitude": 3.367097803,
+   "Longitude": 101.6383325,
+   "Address": "JALAN IPOH, Kampung Orang Asli Serendah, 48200 Serendah, Selangor",
+   "Contact": "013 338 7535",
+   "Youtube": "https://youtu.be/xqN-mKDvUIM?si=t1eatezGeqCl6qUw"
+ },
+ {
+   "FIELD1": 13,
+   "Campsite Name": "BULOH PERINDU CAMPSITE",
+   "Location": "KUALA KUBU BARU",
+   "Latitude": 3.553368556,
+   "Longitude": 101.6852206,
+   "Address": "HM3P+F7 Buluh Telur Campsite (CampBase, ",
+   "Contact": "0107969188",
+   "Youtube": "https://youtu.be/ghPmrSsc0_A?si=EcVQnnV06PY61GnJ"
+ },
+ {
+   "FIELD1": 14,
+   "Campsite Name": "BULOH TELUR CAMPSITE",
+   "Location": "KUALA KUBU BARU",
+   "Latitude": 3.553953439,
+   "Longitude": 101.6857326,
+   "Address": "HM3P+F7, 44000 Kuala Kubu Bharu, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/cGM3_ISBykc?si=TirnZDmM4dXulppr"
+ },
+ {
+   "FIELD1": 15,
+   "Campsite Name": "CAMPENTURE @KERLING",
+   "Location": "KERLING",
+   "Latitude": 3.609823235,
+   "Longitude": 101.6092209,
+   "Address": "Jalan Berlian Utama 44000 Kerling, Selangor",
+   "Contact": "01116273119",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 17,
+   "Campsite Name": "PAK RAMBAI CAMPSITE (4x4 campsite)",
+   "Location": "HULU RENING",
+   "Latitude": 3.494465189,
+   "Longitude": 101.6773041,
+   "Address": "44200, Selangor",
+   "Contact": "01115991825",
+   "Youtube": "https://youtu.be/0gJ9636SDnw?si=mEdWK_Zs1Rq8XV2j"
+ },
+ {
+   "FIELD1": 18,
+   "Campsite Name": "CHALET KELUARGA SAKRI",
+   "Location": "KERLING",
+   "Latitude": 3.646507457,
+   "Longitude": 101.5919075,
+   "Address": "Kampung Pasir Putih, 44000 Kerling, Selangor",
+   "Contact": "017 340 8345",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 19,
+   "Campsite Name": "COWBOY CAMPOUT",
+   "Location": "BATANG KALI",
+   "Latitude": 3.458192616,
+   "Longitude": 101.6366986,
+   "Address": "Lot 821, Jalan Besar, Hulu Yam Lama, 44300 Batang Kali",
+   "Contact": "0123029667",
+   "Youtube": "https://youtu.be/jIurF7DVJv4?si=7PgAuIDUgrTeacz8"
+ },
+ {
+   "FIELD1": 20,
+   "Campsite Name": "DE RIMBUN INN AND RESORT",
+   "Location": "SEKINCHAN",
+   "Latitude": 3.537931511,
+   "Longitude": 101.0800739,
+   "Address": "Jalan Parit 8, Kampung Sungai Leman, 45400 Sekinchan, Selangor",
+   "Contact": "01159621995",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 22,
+   "Campsite Name": "DRAGON RIVER CAMPSITE",
+   "Location": "KERLING",
+   "Latitude": 3.619592171,
+   "Longitude": 101.613197,
+   "Address": "Jalan Berlian Utama, Taman Lembah Damai, 44100 Kerling",
+   "Contact": "0189897905",
+   "Youtube": "https://youtu.be/7-yQjAq1MaU?si=9nTioRZeRIZ3qt2q"
+ },
+ {
+   "FIELD1": 23,
+   "Campsite Name": "DUO CAMP CAMPSITE BY THE RIVER",
+   "Location": "KUALA KUBU BARU",
+   "Latitude": 3.613343866,
+   "Longitude": 101.6096298,
+   "Address": "Jalan Berlian Utama Kerling, 44000 Kuala Kubu Baru",
+   "Contact": "01116273119",
+   "Youtube": "https://youtu.be/2iL1As18BQs?si=mVMHXa3X5eccR0G3"
+ },
+ {
+   "FIELD1": 24,
+   "Campsite Name": "DUSUN ABU CAMPSITE",
+   "Location": "HULU RENING",
+   "Latitude": 3.49378738,
+   "Longitude": 101.6908554,
+   "Address": "Kampung Hulu Rening, 44200 Batang Kali, Selangor",
+   "Contact": "0102586536",
+   "Youtube": "https://youtu.be/KTgWocEMMnI?si=D-OakA1wmg_aO3GY"
+ },
+ {
+   "FIELD1": 25,
+   "Campsite Name": "DUSUN APAK KAWWW",
+   "Location": "BATANG KALI",
+   "Latitude": 3.449651681,
+   "Longitude": 101.6887519,
+   "Address": "Jalan Batang Kali- Genting Highlands",
+   "Contact": "0108910443",
+   "Youtube": "https://youtu.be/yU3GCg33orQ?si=I0Rv630A2rFa9rE-"
+ },
+ {
+   "FIELD1": 26,
+   "Campsite Name": "DUSUN AYAH HERITAGE",
+   "Location": "HULU RENING",
+   "Latitude": 3.490503444,
+   "Longitude": 101.6933217,
+   "Address": "1814, Jalan, Kampung Hulu Rening, 44300 Batang Kali, Selangor",
+   "Contact": "0172237584",
+   "Youtube": "https://youtu.be/6jn9O_RjK4s?si=BTvoZ-6wjfzXPLpe"
+ },
+ {
+   "FIELD1": 27,
+   "Campsite Name": "DUSUN BONDA",
+   "Location": "HULU TAMU",
+   "Latitude": 3.462234762,
+   "Longitude": 101.7039494,
+   "Address": "Lot 2121 (2996) Jalan Ulu Tamu, Kampung Orang Asli Gurney, ",
+   "Contact": null,
+   "Youtube": "https://youtu.be/lloMTEeDkpY?si=9NKO8fnkI-MmLzW8"
+ },
+ {
+   "FIELD1": 29,
+   "Campsite Name": "THE HILLOCK HULU TAMU",
+   "Location": "HULU TAMU",
+   "Latitude": 3.466328231,
+   "Longitude": 101.6944113,
+   "Address": "Lot 2972, Hulu Tamu, 44300 Batang Kali, Selangor",
+   "Contact": "0193195488",
+   "Youtube": "https://youtu.be/jnJoP3aDcH0?si=-as-04zW3rczB9gH"
+ },
+ {
+   "FIELD1": 30,
+   "Campsite Name": "DUSUN PAK NAN ",
+   "Location": "HULU RENING",
+   "Latitude": 3.492523189,
+   "Longitude": 101.6934027,
+   "Address": "Kampung Hulu Rening, 44200 Batang Kali, Selangor",
+   "Contact": "01110760862",
+   "Youtube": "https://youtu.be/IOqAVoax7A4?si=IzM5gbEZFoLie8ni"
+ },
+ {
+   "FIELD1": 31,
+   "Campsite Name": "DUSUN TOK MAT",
+   "Location": "HULU RENING",
+   "Latitude": 3.490006881,
+   "Longitude": 101.6945843,
+   "Address": "FMQV+WR, Kampung Hulu Rening, 44220 Batang Kali, Selangor",
+   "Contact": "01123290023",
+   "Youtube": "https://youtu.be/WnKi2keh_XU?si=LJSeB6CoSCu4c_Fr"
+ },
+ {
+   "FIELD1": 32,
+   "Campsite Name": "EAGLE D'RENING",
+   "Location": "BATANG KALI",
+   "Latitude": 3.494664525,
+   "Longitude": 101.6852827,
+   "Address": "Kampung Hulu Rening, 44200 Batang Kali, Selangor",
+   "Contact": "0122150204",
+   "Youtube": "https://youtu.be/kXsUVor9YqI?si=_uRWJa3u3h-Rjaqi"
+ },
+ {
+   "FIELD1": 33,
+   "Campsite Name": "FLAMBOYANT RESORT CAMPSITE",
+   "Location": "SERENDAH",
+   "Latitude": 3.404771021,
+   "Longitude": 101.6583292,
+   "Address": "Jalan Antara Gapi-Hulu Yam",
+   "Contact": "0192282224",
+   "Youtube": "https://youtu.be/r8x4BgyWBfc?si=n49AWcnfnxBuoSUN"
+ },
+ {
+   "FIELD1": 34,
+   "Campsite Name": "FLINTSTONE CHALET ",
+   "Location": "ULU YAM",
+   "Latitude": 3.297892071,
+   "Longitude": 101.694912,
+   "Address": "Ulu yam, Kampung Batang Batu, 48200 Batu Caves, ",
+   "Contact": "017 326 3116",
+   "Youtube": "https://youtu.be/ux_CSE9ew7Q?si=Qse8HSwZT05qfGht"
+ },
+ {
+   "FIELD1": 35,
+   "Campsite Name": "GAHARU CAMPSITE & RESORT",
+   "Location": "KUALA KUBU BARU",
+   "Latitude": 3.557690889,
+   "Longitude": 101.6476455,
+   "Address": "Kampung Bagang Setia, 44000 Kuala Kubu Bharu,",
+   "Contact": "0149811288",
+   "Youtube": "https://youtu.be/o2UrJ7J5wgE?si=XDf8VkuNPkthWOU6"
+ },
+ {
+   "FIELD1": 37,
+   "Campsite Name": "GG RETREAT BUKIT TASEK SERENDAH",
+   "Location": "SERENDAH",
+   "Latitude": 3.358626098,
+   "Longitude": 101.6485984,
+   "Address": "Bukit Tasik, Kampung Orang Asli Serendah, 48200 Serendah, Selangor",
+   "Contact": "01133117455",
+   "Youtube": "https://youtu.be/PTvYyLgH4Rw?si=t071n_lEra_A3TdI"
+ },
+ {
+   "FIELD1": 38,
+   "Campsite Name": "TREESIDE CAMPSITE",
+   "Location": "KERLING",
+   "Latitude": 3.613755231,
+   "Longitude": 101.6098125,
+   "Address": "JJ75+CW Jalan Berlian Utama Kerling Kuala Kubu Bharu, 44000 Kerling, Selangor",
+   "Contact": "6013-410 3007",
+   "Youtube": "https://youtu.be/CW5RYNXZtlE?si=d5IQu8X0uTQ35DJD"
+ },
+ {
+   "FIELD1": 39,
+   "Campsite Name": "GLAMPING PINANG SEBATANG",
+   "Location": "KUALA KUBU BHARU",
+   "Latitude": 3.572265977,
+   "Longitude": 101.6951914,
+   "Address": "44000 Kuala Kubu Bharu, Selangor",
+   "Contact": "0122002595",
+   "Youtube": "https://youtu.be/foCwZbGS9Yg?si=zeK8dRrkAfTmF1cF&t=54"
+ },
+ {
+   "FIELD1": 40,
+   "Campsite Name": "HULU TAMU ECO RESORT",
+   "Location": "BATANG KALI",
+   "Latitude": 3.469112513,
+   "Longitude": 101.696608,
+   "Address": "44200 Batang Kali, Selangor",
+   "Contact": "0183110608",
+   "Youtube": "https://youtu.be/ckq3SdMcJWI?si=RaAWRWMj5k_Ug5l3"
+ },
+ {
+   "FIELD1": 41,
+   "Campsite Name": "HUTLISTA 2 OFFICIAL",
+   "Location": "ULU YAM",
+   "Latitude": 3.304262425,
+   "Longitude": 101.6954167,
+   "Address": "Hutlista 2 Jalan Ulu Yam - Sungai Tua Hutan Lipur Sungai Tua, 68100 Batu Caves, Selangor",
+   "Contact": "0166213845",
+   "Youtube": "https://youtu.be/Az6NG01OpNQ?si=Bb79rZDYxvWIyS8m"
+ },
+ {
+   "FIELD1": 42,
+   "Campsite Name": "HENTIAN TAMU",
+   "Location": "BATANG KALI",
+   "Latitude": 3.464893124,
+   "Longitude": 101.7002976,
+   "Address": "FM7X+WR Pak Uda D’tamu, 44200, Selangor",
+   "Contact": "01129675573",
+   "Youtube": "https://youtube.com/shorts/MaiK21GItyM?si=fcOkBvMjvhsSxgW0"
+ },
+ {
+   "FIELD1": 43,
+   "Campsite Name": "ISKOVEN",
+   "Location": "SENDAT",
+   "Latitude": 3.405640841,
+   "Longitude": 101.6826255,
+   "Address": "Jln Kampung Gurney, Sendat, 48200, Selangor",
+   "Contact": "01123358185",
+   "Youtube": "https://youtu.be/1aVGiaPmzVw?si=3TUKjrcT1AP6HhcD"
+ },
+ {
+   "FIELD1": 45,
+   "Campsite Name": "INTAN PUTERI ECO FARM",
+   "Location": "BATANG KALI",
+   "Latitude": 3.470463595,
+   "Longitude": 101.6940346,
+   "Address": "Jalan Sungai Tamu, Batang Kali",
+   "Contact": "013 339 6918",
+   "Youtube": "https://youtu.be/ZFEQ6V9cQK0?si=reETYx_Kc1bE9C7d"
+ },
+ {
+   "FIELD1": 46,
+   "Campsite Name": "JERAM NGENJUR (Chalet Rosyabillah)",
+   "Location": "GENTING H'LANDS",
+   "Latitude": 3.440934938,
+   "Longitude": 101.6898351,
+   "Address": "Jln Batang Kali - Genting Highlands, 44300, Selangor",
+   "Contact": "0192835126",
+   "Youtube": "https://youtu.be/Bm1JF1O0dA4?si=mprk6S1NTt2vXpic"
+ },
+ {
+   "FIELD1": 47,
+   "Campsite Name": "KALUMPANG RESORT AND TRAINING CENTRE",
+   "Location": "KALUMPANG",
+   "Latitude": 3.644887243,
+   "Longitude": 101.5892543,
+   "Address": "Jalan Kampung Pasir Putih ",
+   "Contact": "0135326528",
+   "Youtube": "https://youtu.be/RgPvQ3IsTeg?si=sS8PkRmBNkvmYqfv"
+ },
+ {
+   "FIELD1": 48,
+   "Campsite Name": "KAMAR AISHAH CAMPSITE",
+   "Location": "BATANG KALI",
+   "Latitude": 3.468046296,
+   "Longitude": 101.6938871,
+   "Address": "Jalan Sungai Tamu Kampung Sungai Pagoh,",
+   "Contact": "019 332 2441",
+   "Youtube": "https://youtu.be/2F_PPNqC5X8?si=0I9bf3UKjwMBAe0k"
+ },
+ {
+   "FIELD1": 49,
+   "Campsite Name": "KAMPUNGKU RETREAT",
+   "Location": "SERENDAH",
+   "Latitude": 3.362942642,
+   "Longitude": 101.6509614,
+   "Address": "Bukit Tasik, Kampung Orang Asli Serendah, 48200 Serendah",
+   "Contact": "Ai Leen (019-3706363)",
+   "Youtube": "https://youtu.be/qI1gMBdsWUg?si=chPal9xnQHz_KEQg"
+ },
+ {
+   "FIELD1": 50,
+   "Campsite Name": "KEBUN ATOK",
+   "Location": "BATANG KALI",
+   "Latitude": 3.452346763,
+   "Longitude": 101.6848015,
+   "Address": "4625, Batang Kali, Kampung Kuantan",
+   "Contact": "01123840553",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 51,
+   "Campsite Name": "KEBUN LEMBAH INKI",
+   "Location": "KERLING",
+   "Latitude": 3.625709762,
+   "Longitude": 101.5832076,
+   "Address": "Kampung Gumut Tambahan, 66000 Kerling, Selangor",
+   "Contact": "0179552210",
+   "Youtube": "https://youtu.be/MX_L7j9fdbU?si=ebYF2DD3dtlQLI7m"
+ },
+ {
+   "FIELD1": 52,
+   "Campsite Name": "KEM DAH JUMPA",
+   "Location": "ULU RENING",
+   "Latitude": 3.495345698,
+   "Longitude": 101.6854671,
+   "Address": "Kg Ulu Rening, 44300 Batang Kali, Selangor",
+   "Contact": "0172339124",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 53,
+   "Campsite Name": "KEM LEMBAH GENTING",
+   "Location": "BATANG KALI",
+   "Latitude": 3.45327838,
+   "Longitude": 101.6839409,
+   "Address": "Jalan Batang Kali ",
+   "Contact": "0199816829",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 54,
+   "Campsite Name": "KEM PENGAKAP TEMASYA RIMBA TEMPLER",
+   "Location": "RAWANG",
+   "Latitude": 3.288403962,
+   "Longitude": 101.6419452,
+   "Address": "Off Jalan Rawang",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 55,
+   "Campsite Name": "KEM REKREASI SUNGAI GADING ",
+   "Location": "HULU BERNAM",
+   "Latitude": 3.706385021,
+   "Longitude": 101.5624542,
+   "Address": "PH46+FX Kerling, Selangor",
+   "Contact": "0122484048",
+   "Youtube": "https://youtu.be/6rA2MVR5ruw?si=jhkpKdslcuGBknyY"
+ },
+ {
+   "FIELD1": 56,
+   "Campsite Name": "KEM RIMBA TAMU",
+   "Location": "BATANG KALI",
+   "Latitude": 3.466566915,
+   "Longitude": 101.6965351,
+   "Address": "Lot 2553, Jalan Ulu Tamu, 44300 Batang Kali, Selangor",
+   "Contact": "0133880713",
+   "Youtube": "https://youtu.be/sAQjUXJqPOc?si=4LwW_A9M9Hv-t7VC"
+ },
+ {
+   "FIELD1": 58,
+   "Campsite Name": "KEM TANJUNG DUSUN ABU CAMPSITE",
+   "Location": "HULU RENING",
+   "Latitude": 3.494348735,
+   "Longitude": 101.691968,
+   "Address": "Kampung Hulu Rening, 44200 Batang Kali, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 59,
+   "Campsite Name": "KEM THE WOODS",
+   "Location": "BATANG KALI",
+   "Latitude": 3.38039555,
+   "Longitude": 101.6804168,
+   "Address": "Jalan Sungai Tua, Ulu Yam, 44300 Batu Caves, Selangor",
+   "Contact": "019 244 5312",
+   "Youtube": "https://youtu.be/PC3DA6H9o5U?si=v-rDsR9fnUNLJm2x"
+ },
+ {
+   "FIELD1": 62,
+   "Campsite Name": "KUALA KUBU BARU WIND VALLEY",
+   "Location": "KUALA KUBU BARU",
+   "Latitude": 3.534801645,
+   "Longitude": 101.665708,
+   "Address": "KKB Wind Valley, 44000 Kuala Kubu Bharu, Selangor",
+   "Contact": "0149811288",
+   "Youtube": "https://youtu.be/LlcUblNfXS8?si=b_o7xSuyS1FdM4-7"
+ },
+ {
+   "FIELD1": 63,
+   "Campsite Name": "LAMAN POK NIK",
+   "Location": "BATANG KALI",
+   "Latitude": 3.469070395,
+   "Longitude": 101.6553482,
+   "Address": "Lot 443, Jalan Cikgu Enal, Kampung Rantau Panjang, 44300 Batang Kali, Selangor",
+   "Contact": "0176021776",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 64,
+   "Campsite Name": "LOLO MIKE EKO FARM KERLING",
+   "Location": "KERLING",
+   "Latitude": 3.58816322,
+   "Longitude": 101.5970894,
+   "Address": "lot 201, Jalan Besar, Kampung Pasir, 44000 Kerling, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 66,
+   "Campsite Name": "MUVER'S CAMPSITE",
+   "Location": "SERENDAH",
+   "Latitude": 3.362025132,
+   "Longitude": 101.6420601,
+   "Address": "Muvers Campsite, Kampung Orang Asli, 48200 Serendah, Selangor",
+   "Contact": "0162184095",
+   "Youtube": "https://youtu.be/j_uEeIMBLhY?si=cajR3BZEngv-IWEe"
+ },
+ {
+   "FIELD1": 67,
+   "Campsite Name": "OUTPOST CAMP",
+   "Location": "BATANG KALI",
+   "Latitude": 3.424460678,
+   "Longitude": 101.7507554,
+   "Address": "B66, Kampung Kuantan, 44300 Batang Kali, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 68,
+   "Campsite Name": "OWL D'RENING",
+   "Location": "BATANG KALI",
+   "Latitude": 3.496359013,
+   "Longitude": 101.6818429,
+   "Address": "FMWJ+CP, 44200 Kuala Kubu Bharu, Selangor",
+   "Contact": "0122150204",
+   "Youtube": "https://youtu.be/H9LH-_4zCaY?si=kwdPvh0zMUlD2hzf"
+ },
+ {
+   "FIELD1": 69,
+   "Campsite Name": "PAK UDA D'TAMU",
+   "Location": "BATANG KALI",
+   "Latitude": 3.465107624,
+   "Longitude": 101.6995272,
+   "Address": "Jalan Sungai Tamu, 44200, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/Z9iGroLYM8o?si=5b9Ys64RF6PKucDD"
+ },
+ {
+   "FIELD1": 70,
+   "Campsite Name": "PAK RAMBAI CAMPSITE (4X4 ONLY ACCES )",
+   "Location": "HULU RENING",
+   "Latitude": 3.494475898,
+   "Longitude": 101.6773041,
+   "Address": "FMVG+MW Rasa, Selangor",
+   "Contact": "01115991825",
+   "Youtube": "https://youtu.be/0gJ9636SDnw?si=GilBLbB8XGrZEzmL"
+ },
+ {
+   "FIELD1": 71,
+   "Campsite Name": "PASIR PUTIH RESORT",
+   "Location": "KERLING",
+   "Latitude": 3.635691074,
+   "Longitude": 101.5866972,
+   "Address": "Kampung Pasir Putih, 44000 Kerling, Selangor",
+   "Contact": "+60 19-249 3114 ",
+   "Youtube": "https://youtu.be/BIbVeKocrT0?si=O4Bh4ueK26wBnZE2"
+ },
+ {
+   "FIELD1": 72,
+   "Campsite Name": "PELANGI HILL RESORT CAMPSITE",
+   "Location": "KERLING",
+   "Latitude": 3.604894183,
+   "Longitude": 101.618263,
+   "Address": "Lot 257, Taman Lembah Damai, 44100 Kerling, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/SS1-fl7v-RI?si=DRSf11ITplAx8y5f"
+ },
+ {
+   "FIELD1": 73,
+   "Campsite Name": "PONDOK WARISAN IBRAHIM IPAH CAMPSITE",
+   "Location": "HULU RENING",
+   "Latitude": 3.492581472,
+   "Longitude": 101.6939608,
+   "Address": " Kampung Hulu Rening, 44300 Batang Kali, Selangor",
+   "Contact": "0163052173",
+   "Youtube": "https://youtu.be/e5g1Vqfgcn8?si=2GBbGLcEtnOG1sV2"
+ },
+ {
+   "FIELD1": 74,
+   "Campsite Name": "RAINBOW STYLE GLAMPING",
+   "Location": "SERENDAH ",
+   "Latitude": 3.362418042,
+   "Longitude": 101.6506234,
+   "Address": "Block 8, Bukit Tasik Serendah, 48200 Serendah, Selangor",
+   "Contact": "0109119556",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 75,
+   "Campsite Name": "RASA DURIO ECO GLAMPZ",
+   "Location": "KUALA KUBU BARU",
+   "Latitude": 3.527651589,
+   "Longitude": 101.6453912,
+   "Address": "Lot 481, Jalan Ampang Pecah Rasa, 44200 Kuala Kubu Baru, Selangor",
+   "Contact": "0192818191",
+   "Youtube": "https://youtu.be/Oxu23WTaZXo?si=5BmlSZC_DkzD2tf1"
+ },
+ {
+   "FIELD1": 76,
+   "Campsite Name": "RENING HIJAU CAMPSITE",
+   "Location": "HULU RENING",
+   "Latitude": 3.492584361,
+   "Longitude": 101.6939191,
+   "Address": "LOT 1479, Kampung Hulu Rening, 44300 Batang Kali, Selangor",
+   "Contact": "0132651184",
+   "Youtube": "https://youtu.be/0cdmgoPGvF8?si=V2rNzg3sA0h_5WGU"
+ },
+ {
+   "FIELD1": 77,
+   "Campsite Name": "RENING VALLEY",
+   "Location": "HULU RENING",
+   "Latitude": 3.483350555,
+   "Longitude": 101.6918002,
+   "Address": "Lot 1792, Kampung Hulu Rening, 44300 Batang Kali, Selangor",
+   "Contact": "0196545648",
+   "Youtube": "https://youtu.be/f2OLWQ-2Q9E?si=X-jzK6N_ix4tMB7b"
+ },
+ {
+   "FIELD1": 78,
+   "Campsite Name": "RIMBA KALONG ECO RESORT/Umi Rimba Village",
+   "Location": "ULU YAM",
+   "Latitude": 3.41278377,
+   "Longitude": 101.6778567,
+   "Address": "Jalan Kampung Ulu Kalong, Hulu Yam Bharu, 44300,",
+   "Contact": "019 849 0908",
+   "Youtube": "https://youtu.be/jiB50fKkuU4?si=bfuZE9Y_a0Gy_85R"
+ },
+ {
+   "FIELD1": 80,
+   "Campsite Name": "RIMBAKALI CAMPSITE",
+   "Location": "GENTING H'LANDS",
+   "Latitude": 3.441526974,
+   "Longitude": 101.6891628,
+   "Address": "Rimba Kali, JALAN, 48200 Genting Highlands, Selangor",
+   "Contact": "01162629596",
+   "Youtube": "https://youtu.be/KY4hYTCh970?si=cmWFQZBxVJ3nZG10"
+ },
+ {
+   "FIELD1": 81,
+   "Campsite Name": "RIVER AND GLAM NUR LAMAN BISTARI",
+   "Location": "ULU YAM",
+   "Latitude": 3.299543226,
+   "Longitude": 101.6957519,
+   "Address": " Jalan Sungai Tua, Kampung Batang Batu, 68100 Batu Caves,",
+   "Contact": null,
+   "Youtube": "https://youtu.be/JYszCODZZGI?si=o28AEm9Tu8desR-k"
+ },
+ {
+   "FIELD1": 82,
+   "Campsite Name": "RIVER GARDEN ",
+   "Location": "KERLING",
+   "Latitude": 3.61782798,
+   "Longitude": 101.6107199,
+   "Address": "Jalan Berlian Utama ",
+   "Contact": "011 1506 5839",
+   "Youtube": "https://youtu.be/Fvufk0_a_TE?si=-m7T816LhgpeLFLZ"
+ },
+ {
+   "FIELD1": 83,
+   "Campsite Name": "ROCK ECO RESORT- ULU YAM",
+   "Location": "ULU YAM",
+   "Latitude": 3.385022196,
+   "Longitude": 101.6782388,
+   "Address": "Km 7 Jalan Ulu Yam, Jalan Sungai Tua, Ulu Yam Perdana, 44300, Selangor",
+   "Contact": "0193003115",
+   "Youtube": "https://youtu.be/vqt4WcIbBLk?si=8Gcde-_f735qpk21"
+ },
+ {
+   "FIELD1": 84,
+   "Campsite Name": "KAKI BUKIT GENTING CAMPSITE",
+   "Location": "BATANG KALI",
+   "Latitude": 3.440699093,
+   "Longitude": 101.6912128,
+   "Address": "Campsite Kaki Bukit, 48200, Selangor",
+   "Contact": "0196555924",
+   "Youtube": "https://youtu.be/MBVEC2vfQNU?si=zAf4xaz6d6HeLg8I"
+ },
+ {
+   "FIELD1": 85,
+   "Campsite Name": "ROSYABILLAH CARAVAN & CAMPSITE (JERAM NGENJUR)",
+   "Location": "GENTING H'LANDS",
+   "Latitude": 3.441185264,
+   "Longitude": 101.6898611,
+   "Address": "Jln Batang Kali - Genting Highlands, Kampung Kuantan, 44300 Batang Kali, Selangor",
+   "Contact": "0164878498",
+   "Youtube": "https://youtu.be/MBVEC2vfQNU?si=vANfzvfgrmQqe8Gw"
+ },
+ {
+   "FIELD1": 86,
+   "Campsite Name": "SOJUK RIVERSIDE",
+   "Location": "GENTING H'LANDS",
+   "Latitude": 3.448112338,
+   "Longitude": 101.6874029,
+   "Address": "Jln Batang Kali - Genting Highlands, Kampung Kuantan, 44300 Batang Kali, Selangor",
+   "Contact": "0173765668",
+   "Youtube": "https://youtu.be/kOQ-rubNlWE?si=phnDN8U_da4zJw26"
+ },
+ {
+   "FIELD1": 88,
+   "Campsite Name": "STATION 2 CAR CAMPSITE (THE WOODS)",
+   "Location": "ULU YAM",
+   "Latitude": 3.380267027,
+   "Longitude": 101.6805026,
+   "Address": "Station2 Car Campsite Lot Pt 2729, Hulu Yam Bahru, 44300 Batang Kali, Selangor",
+   "Contact": "0138869122",
+   "Youtube": "https://youtu.be/_wNL_XxILkg?si=q7qJMn_lgfgCTKLW"
+ },
+ {
+   "FIELD1": 89,
+   "Campsite Name": "SUMMER SUMMER FARM",
+   "Location": "HULU RENING",
+   "Latitude": 3.482847231,
+   "Longitude": 101.7011664,
+   "Address": "Lot 1768, Kampung Hulu Rening, 44200 Mukim Rasa, Selangor",
+   "Contact": "0149664363",
+   "Youtube": "https://youtu.be/5hE1czKEiIA?si=PZ8BnN25XaXVwGOx"
+ },
+ {
+   "FIELD1": 90,
+   "Campsite Name": "TAMAN RIMBA TEMPLER",
+   "Location": "RAWANG",
+   "Latitude": 3.286606862,
+   "Longitude": 101.6423531,
+   "Address": "Jalan Rawang, ",
+   "Contact": "01124197880",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 91,
+   "Campsite Name": "TANAH DESA KELANA ECO VENTURE",
+   "Location": "GENTING H'LANDS",
+   "Latitude": 3.451365284,
+   "Longitude": 101.6850087,
+   "Address": "Jln Batang Kali - Genting Highlands, Kampung Kuantan, 44300 Batang Kali, Selangor",
+   "Contact": "162933329.00",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 92,
+   "Campsite Name": "TAPAK BERKELAH SUNGAI PERTAK",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.578224634,
+   "Longitude": 101.7323968,
+   "Address": "Pertak JP3H+CC2 Kuala Kubu Baru, Selangor Pertak, 44000 Kuala Kubu Baru, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/eaEQcLrZgnc?si=vB3SQtV4VgI8lQWG"
+ },
+ {
+   "FIELD1": 93,
+   "Campsite Name": "TEPIAN BAMBU GLAMPSITE",
+   "Location": "SG GABAI",
+   "Latitude": 3.165927534,
+   "Longitude": 101.9056696,
+   "Address": "Jalan Sungai Gabai, Kampung Sungai Pagoh,",
+   "Contact": null,
+   "Youtube": "https://youtu.be/GxMszLOloW0?si=2DZdU6RMokI8GYKc"
+ },
+ {
+   "FIELD1": 94,
+   "Campsite Name": "TERATAK TOK ALANG",
+   "Location": "HULU RENING",
+   "Latitude": 3.49266301,
+   "Longitude": 101.6940042,
+   "Address": "Kampung Hulu Rening, Batang Kali, Selangor",
+   "Contact": "019 303 2021",
+   "Youtube": "https://youtu.be/3rqX__HgCo8?si=9PU2lgK4Fj6CKvPc"
+ },
+ {
+   "FIELD1": 95,
+   "Campsite Name": "THE HID3OUT",
+   "Location": "ULU YAM",
+   "Latitude": 3.304274406,
+   "Longitude": 101.6953143,
+   "Address": "Hutlista 2 Jalan Ulu Yam - Sungai Tua Sungai Tua Recreational Forest, 68100 Batu Caves, Selangor",
+   "Contact": "01112811725",
+   "Youtube": "https://youtu.be/_8Q0nl6AuXI?si=OydL-ZQWnEvfaRAB"
+ },
+ {
+   "FIELD1": 96,
+   "Campsite Name": "THE NAHARA KELUMPANG RESORT AND CAMPSITE",
+   "Location": "KALUMPANG ",
+   "Latitude": 3.642969461,
+   "Longitude": 101.5897893,
+   "Address": "Jalan Kampung Pasir Putih ",
+   "Contact": "0194312193",
+   "Youtube": "https://youtube.com/shorts/-jgDNDcLKKQ?si=FlaUK7XJbQS5K9cL"
+ },
+ {
+   "FIELD1": 97,
+   "Campsite Name": "THE STICKS ",
+   "Location": "KUALA KUBU BHARU",
+   "Latitude": 3.595889643,
+   "Longitude": 101.7351285,
+   "Address": "Lot 213 Jalan KKB - Fraser's Hill, 44000 Kuala Kubu Baru, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/PJgFY97sqiA?si=nVWuhB-1xI6g2LWL"
+ },
+ {
+   "FIELD1": 98,
+   "Campsite Name": "WOODS RESORT",
+   "Location": "ULU YAM",
+   "Latitude": 3.380288451,
+   "Longitude": 101.680406,
+   "Address": "Jalan Sungai Tua, Ulu Yam, 44300 Batu Caves, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/-d9HqNdR9us?si=-0oLfo9ONCpbSJF1"
+ },
+ {
+   "FIELD1": 99,
+   "Campsite Name": "TOK BA CAMPSITE",
+   "Location": "ULU TAMU",
+   "Latitude": 3.465522609,
+   "Longitude": 101.6979115,
+   "Address": "Jalan ulu tamu Ulu tamu, 44330 Batang Kali, Selangor",
+   "Contact": "0192873590",
+   "Youtube": "https://youtu.be/SpStuOdGLek?si=Y5CzCrtd0Tv-ZIF-"
+ },
+ {
+   "FIELD1": 100,
+   "Campsite Name": "TUPAI EMAS ",
+   "Location": "HULU RENING",
+   "Latitude": 3.501756537,
+   "Longitude": 101.7047302,
+   "Address": "FPP2+GR, Kampung Hulu Rening, 44200 Batang Kali, Selangor",
+   "Contact": "017-3399249 (En. Ariff)",
+   "Youtube": "https://youtu.be/lp8qIWc_Lxk?si=p-VWbRlliwDJXXxC"
+ },
+ {
+   "FIELD1": 101,
+   "Campsite Name": "ULU RENING COTTAGE",
+   "Location": "HULU RENING",
+   "Latitude": 3.493773174,
+   "Longitude": 101.6958326,
+   "Address": " Kampung Hulu Rening, Batang Kali, Selangor",
+   "Contact": "0192331000",
+   "Youtube": "https://youtu.be/EnJZVmex0Ps?si=bljkbFiSk598IXzo"
+ },
+ {
+   "FIELD1": 102,
+   "Campsite Name": "HULU TAMU ECO RESORT",
+   "Location": "BATANG KALI",
+   "Latitude": 3.467849208,
+   "Longitude": 101.6961589,
+   "Address": "44200 Batang Kali, Selangor",
+   "Contact": "0183110608",
+   "Youtube": "https://youtu.be/ckq3SdMcJWI?si=fQ-6uaYKG0g8Ceyd"
+ },
+ {
+   "FIELD1": 103,
+   "Campsite Name": "WADI SUNGAI INKI",
+   "Location": "KERLING",
+   "Latitude": 3.634310934,
+   "Longitude": 101.5833578,
+   "Address": "Jalan, Kampung Pasir Putih, 44100 Kerling, Selangor",
+   "Contact": "0197089860",
+   "Youtube": "https://youtu.be/UmpHM0n2_z4?si=joJrQr-23wzUhQVP"
+ },
+ {
+   "FIELD1": 104,
+   "Campsite Name": "WARISAN CAMPSITE",
+   "Location": "BATANG KALI",
+   "Latitude": 3.409946152,
+   "Longitude": 101.6818313,
+   "Address": "Jalan Kampung Gurney, Kg Pasir Ulu Yam, ",
+   "Contact": "0148098093",
+   "Youtube": "https://youtu.be/ZFU_beSvUhs?si=6LZuknV08UoJhQHq"
+ },
+ {
+   "FIELD1": 105,
+   "Campsite Name": "WILD CAMPSITE PAK MUS MCO",
+   "Location": "KERLING ",
+   "Latitude": 3.713639948,
+   "Longitude": 101.5738247,
+   "Address": "44000 Kerling, Selangor",
+   "Contact": "017 331 1487",
+   "Youtube": "https://youtu.be/C-pO4Um-L1w?si=dMZc1LAt66Ib1tTR"
+ },
+ {
+   "FIELD1": 106,
+   "Campsite Name": "WOLFLAND TOURING PARK",
+   "Location": "KALUMPANG",
+   "Latitude": 3.599621742,
+   "Longitude": 101.5400491,
+   "Address": "Lot 775, Jln Sungai Sabai, Kalumpang, 44000, Selangor",
+   "Contact": "01121260564",
+   "Youtube": "https://youtu.be/OrSynSaRSNs?si=JKEZhSWtQdBuZtp0"
+ },
+ {
+   "FIELD1": 107,
+   "Campsite Name": "LATA JEBUS ",
+   "Location": "KUALA KUBU BARU",
+   "Latitude": 3.565762198,
+   "Longitude": 101.74293,
+   "Address": "HP8V+55, 44000 Kuala Kubu Bharu, Selangor",
+   "Contact": "01123220538 Ayah Eden",
+   "Youtube": "https://youtu.be/8jEp4dRzOT4?si=YU0rMvELoHpi4Mzj"
+ },
+ {
+   "FIELD1": 108,
+   "Campsite Name": "CAMPSITE KNOW WHERE 2.0",
+   "Location": "KUALA KUBU BARU",
+   "Latitude": 3.553485627,
+   "Longitude": 101.6842424,
+   "Address": "Jalan Ampang Pechah, Kampung Ampang Pechah, 44000 Kuala Kubu Baru, ",
+   "Contact": "0139320510",
+   "Youtube": "https://youtu.be/sKi5XohV1sw?si=8ZgHJ5OBweZmhPMy"
+ },
+ {
+   "FIELD1": 109,
+   "Campsite Name": "NATURE CAMP LASYKAR GUNUNG",
+   "Location": "KUALA KUBU BHARU",
+   "Latitude": 3.614547586,
+   "Longitude": 101.6102738,
+   "Address": "Near Jalan Berlian Utama, Taman Lembah Damai, 44100 Kerling, Selangor kerling, 44100 Kuala Kubu Baru, Selangor",
+   "Contact": "0192157517",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 110,
+   "Campsite Name": "BETING RIMBAYU ",
+   "Location": "KUALA KUBU BARU",
+   "Latitude": 3.543968029,
+   "Longitude": 101.6799735,
+   "Address": "Beting RimBayu, Taman Millanium Buluh Telu, 44000 Kuala Kubu Bharu, Selangor",
+   "Contact": "0132501921",
+   "Youtube": "https://youtu.be/oH86bJc_9lA?si=6YY-K46K2In7dIlV"
+ },
+ {
+   "FIELD1": 111,
+   "Campsite Name": "TANAH KALUMPANG 13 CAMPING",
+   "Location": "KALUMPANG",
+   "Latitude": 3.63078465,
+   "Longitude": 101.584162,
+   "Address": "Kampung Gumut Tambahan, 66000 Kerling, Selangor",
+   "Contact": "0175427857",
+   "Youtube": "https://youtu.be/Y4AQC34LcOE?si=Ntt84xuu9kBDMT74"
+ },
+ {
+   "FIELD1": 112,
+   "Campsite Name": "NAGARA CAMPSITE BY BUNIAN",
+   "Location": "BATANG KALI",
+   "Latitude": 3.408687633,
+   "Longitude": 101.6827641,
+   "Address": "sungai sendat, Jln Kampung Gurney, Kampung Pasir Ulu Yam, 44300 Batang Kali, Selangor",
+   "Contact": "01115502024",
+   "Youtube": "https://www.facebook.com/reel/879792597329986"
+ },
+ {
+   "FIELD1": 113,
+   "Campsite Name": "DUSUN HJ RADI ",
+   "Location": "KERLING",
+   "Latitude": 3.618371453,
+   "Longitude": 101.6115721,
+   "Address": "Dusun Haji Radi, 44100 Kerling, Selangor",
+   "Contact": "01137716541",
+   "Youtube": "https://youtu.be/bDZts3v0DyM?si=0K69n2ISRhqt_kI0"
+ },
+ {
+   "FIELD1": 114,
+   "Campsite Name": "SINGGAH RIVERSIDE",
+   "Location": "HULU YAM",
+   "Latitude": 3.408004764,
+   "Longitude": 101.6694736,
+   "Address": "B23, Jalan Hulu Yam, 48200, Selangor",
+   "Contact": "0176669265",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 115,
+   "Campsite Name": "LOMPAT RIMAU CAMPSITE (WILD CAMP)",
+   "Location": "BATANG KALI",
+   "Latitude": 3.456580446,
+   "Longitude": 101.710848,
+   "Address": "FP46+J8, 44200 Batang Kali, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/i9ojg-3mkgU?si=zUSpkQxjhj9x30O7"
+ },
+ {
+   "FIELD1": 116,
+   "Campsite Name": "JARI MANIS CAMPSITE",
+   "Location": "BATANG KALI",
+   "Latitude": 3.427119276,
+   "Longitude": 101.6709492,
+   "Address": "Lot 1139, Jalan Kampung Ulu Kalong, 44300 Batang Kali, Selangor",
+   "Contact": "0134913635",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 118,
+   "Campsite Name": "OTAI CAMPSITE (CAMPGROUND)",
+   "Location": "BATANG KALI",
+   "Latitude": 3.460742815,
+   "Longitude": 101.7067298,
+   "Address": "44200 Batang Kali, Selangor",
+   "Contact": "01123553718",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 119,
+   "Campsite Name": "WILD CAMPSITE PAK MUS MCO",
+   "Location": "HULU BERNAM",
+   "Latitude": 3.713586416,
+   "Longitude": 101.5738355,
+   "Address": "PH7F+9G, 44000 Kerling, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/C-pO4Um-L1w?si=RguN35DHy7nggGVw"
+ },
+ {
+   "FIELD1": 120,
+   "Campsite Name": "BERNAM NATURE HUT",
+   "Location": "HULU BERNAM",
+   "Latitude": 3.685442009,
+   "Longitude": 101.5392906,
+   "Address": "Kampung Simpang Empat Dalam, Hulu Bernam, 35900 Ulu Selangor, Perak",
+   "Contact": "018 360 2728",
+   "Youtube": "https://youtu.be/47bGOlDpxVs?si=KoKLDEjGRZbbSJ_W"
+ },
+ {
+   "FIELD1": 123,
+   "Campsite Name": "ULU CAMP BERNAM",
+   "Location": "KERLING",
+   "Latitude": 3.707194533,
+   "Longitude": 101.5633733,
+   "Address": "PH47+Q9, 44000 Kerling, Selangor",
+   "Contact": "0192876443",
+   "Youtube": "https://youtu.be/SauVkvJqZaE?si=jXZl-dUYlpoKlWB0"
+ },
+ {
+   "FIELD1": 124,
+   "Campsite Name": "RIVER GARDEN KERLING",
+   "Location": "KERLING",
+   "Latitude": 3.617720908,
+   "Longitude": 101.6107199,
+   "Address": "JJ86+F5, 40000 Kerling, Selangor",
+   "Contact": "0195047896",
+   "Youtube": "https://youtu.be/sprdCImzWRg?si=VyTJOXq_-HAcu6mS"
+ },
+ {
+   "FIELD1": 125,
+   "Campsite Name": "PANTAI SIPUT JALAN BUMI HIJAU",
+   "Location": "SABAK BERNAM",
+   "Latitude": 3.750600664,
+   "Longitude": 100.8958556,
+   "Address": "Jalan Bumi Hijau, 45200 Sabak, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/yWQoMGxWRYk?si=NLhjwQXLVdaIdH3Q"
+ },
+ {
+   "FIELD1": 126,
+   "Campsite Name": "LUBOK KAWAH PUBLIC CAMPSITE",
+   "Location": "HULU BERNAM",
+   "Latitude": 3.717738753,
+   "Longitude": 101.5705166,
+   "Address": "Hulu Bernam, 44000 Tanjong Malim, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 127,
+   "Campsite Name": "D'JERAM SANTAI CAMPSITE ",
+   "Location": "JERAM",
+   "Latitude": 3.223824569,
+   "Longitude": 101.3051596,
+   "Address": "LMS Jalan Ban, Tepi Pantai Jeram, 4580 Kuala Selangor",
+   "Contact": "0179693624",
+   "Youtube": "https://youtu.be/TpKmbolGKwM?si=PlwOIxc9EqSmMhO3"
+ },
+ {
+   "FIELD1": 128,
+   "Campsite Name": "LEMBAH PELADANG AGRO PARK CAMPSITE",
+   "Location": "SUNGAI BULOH",
+   "Latitude": 3.197071652,
+   "Longitude": 101.4679082,
+   "Address": " Bandar Saujana Utama, 47000 Sungai Buloh, Selangor",
+   "Contact": "0123477780",
+   "Youtube": "https://youtu.be/ntGRsuGH4qs?si=rur6M3xQuUicdONB"
+ },
+ {
+   "FIELD1": 129,
+   "Campsite Name": "KUALA SELANGOR CABIN CAMP - KSSC",
+   "Location": "JERAM",
+   "Latitude": 3.266420502,
+   "Longitude": 101.3668436,
+   "Address": "Lot 4021, Jalan Rizab Zazuli, Kampung Bukit Hijau, 45800 Jeram",
+   "Contact": "0174108067",
+   "Youtube": "https://youtu.be/PcWaDoVHbIQ?si=TeHpF7L-cxVDrkD9"
+ },
+ {
+   "FIELD1": 130,
+   "Campsite Name": "TASIK UNISEL BESTARI JAYA",
+   "Location": "BESTARI JAYA",
+   "Latitude": 3.416378892,
+   "Longitude": 101.441485,
+   "Address": "Jalan Timur Tambahan, 45600 Batang Berjuntai, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 131,
+   "Campsite Name": "DE SELVA CAMPSITE",
+   "Location": "KAPAR",
+   "Latitude": 3.172717955,
+   "Longitude": 101.3091865,
+   "Address": "Jalan Bagan 2, Kampung Sungai Janggut, 45600 Kapar",
+   "Contact": "0125773943",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 132,
+   "Campsite Name": "THE NEST-MAEPS SERDANG",
+   "Location": "SERDANG",
+   "Latitude": 2.978738806,
+   "Longitude": 101.6931327,
+   "Address": "UPM, 43400 Seri Kembangan, Selangor",
+   "Contact": "012 325 3198",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 134,
+   "Campsite Name": "PANTAI KLANANG CAMPSITE",
+   "Location": "BANTING",
+   "Latitude": 2.790080887,
+   "Longitude": 101.4108858,
+   "Address": "Kampung Kelanang, Banting",
+   "Contact": "0331872825",
+   "Youtube": "https://youtu.be/SKcoz_d0ruM?si=ULuxfF4gTdY_gbch"
+ },
+ {
+   "FIELD1": 135,
+   "Campsite Name": "TADOM HILL RESORT",
+   "Location": "BANTING",
+   "Latitude": 2.811364165,
+   "Longitude": 101.628467,
+   "Address": "2, Jalan Bukit Tadom, Kampung Orang Asli, Kampung Labohan Dagang, 42700 Banting, Selangor",
+   "Contact": "0125225908",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 136,
+   "Campsite Name": "TADOM LEISURE CAMP ",
+   "Location": "BANTING ",
+   "Latitude": 2.81141407,
+   "Longitude": 101.6265714,
+   "Address": "32, Kampung Labohan Dagang, 42700 Banting, Selangor",
+   "Contact": "0125225883",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 137,
+   "Campsite Name": "VILLAGE RIVER HILL",
+   "Location": "KEMENSAH",
+   "Latitude": 3.219189015,
+   "Longitude": 101.7746387,
+   "Address": "Jalan Taman Zooview, Kampung Kemensah, 68000 Ampang, Selangor",
+   "Contact": "0126500980",
+   "Youtube": "https://youtu.be/QP-gaEVKLyY?si=nR7U99fOSarm2oLt"
+ },
+ {
+   "FIELD1": 138,
+   "Campsite Name": "TAMAN EKO RIMBA KOMANWEL (TERKOM)",
+   "Location": "RAWANG",
+   "Latitude": 3.289865803,
+   "Longitude": 101.6161173,
+   "Address": "Lagong Forest Reserve, KM 23, Jalan Rawang, Compartment 3, 48000 Rawang, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/D3w26unRPhg?si=cuhgo-HBOhNhfhNo"
+ },
+ {
+   "FIELD1": 139,
+   "Campsite Name": "AQISS RIVER CAMP",
+   "Location": "GOMBAK",
+   "Latitude": 3.310500553,
+   "Longitude": 101.7347391,
+   "Address": "Jln Gombak, Batu 12 gombak, 53100 Kuala Lumpur, Selangor",
+   "Contact": "01110270869",
+   "Youtube": "https://youtu.be/8gRtB87jMi0?si=41sxzLsyw3A_5HTJ"
+ },
+ {
+   "FIELD1": 140,
+   "Campsite Name": "KEM ALANG SEDAYU ",
+   "Location": "GOMBAK",
+   "Latitude": 3.304483473,
+   "Longitude": 101.7365542,
+   "Address": "Batu 12, Jln Gombak, Lama, 53100 Kuala Lumpur, Selangor",
+   "Contact": "016 371 8291",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 141,
+   "Campsite Name": "FREEZY68 CAMPSITE",
+   "Location": "GOMBAK",
+   "Latitude": 3.332053592,
+   "Longitude": 101.773408,
+   "Address": "68, Jln Gombak, 68100 Batu Caves, Selangor",
+   "Contact": "0178381410",
+   "Youtube": "https://youtu.be/Dx4_qmRZzeM?si=HOzjFHaKsBVialq6"
+ },
+ {
+   "FIELD1": 142,
+   "Campsite Name": "GIBS ECOTOURISM",
+   "Location": "SG TUA",
+   "Latitude": 3.3129425,
+   "Longitude": 101.6976474,
+   "Address": "Lot 36837, Jalan Sungai Tua, 68100 Batu Caves",
+   "Contact": "0132788285",
+   "Youtube": "https://youtu.be/96cv6LS_Kfc?si=G3N4nL5JxD0fuNEt"
+ },
+ {
+   "FIELD1": 143,
+   "Campsite Name": "KV @ KEMENSAH VALLEY RECREATION AND CHALET",
+   "Location": "AMPANG JAYA",
+   "Latitude": 3.22346992,
+   "Longitude": 101.7791937,
+   "Address": "Kg Orang asli, Jalan, Kg, Kemensah hulu Klang, 68000 Ampang, Selangor",
+   "Contact": "012 327 0679",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 144,
+   "Campsite Name": "NUR LAMAN BESTARI",
+   "Location": "SG TUA",
+   "Latitude": 3.299204107,
+   "Longitude": 101.6961714,
+   "Address": "Jalan Ulu Yam Baru, Hutan Lipur Sg.Tua, Selangor, 68100 Batu Caves",
+   "Contact": "0377286095",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 145,
+   "Campsite Name": "RIVER & GLAMP",
+   "Location": "SG TUA",
+   "Latitude": 3.300453671,
+   "Longitude": 101.695827,
+   "Address": "Nur Laman Bestari Eco Resort, Jalan Sungai Tua, Kampung Batang Batu, 68100 Batu Caves, Selangor",
+   "Contact": "0174023966",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 146,
+   "Campsite Name": "SEDAYU GREEN VENTURE",
+   "Location": "GOMBAK",
+   "Latitude": 3.30473409,
+   "Longitude": 101.7364336,
+   "Address": "Jalan Pahang Lama Batu 12 3/4, 53100, Wilayah Persekutuan Kuala Lumpur",
+   "Contact": "0173432861",
+   "Youtube": "https://youtu.be/OMuKLb382JU?si=hvJSxs-q5q6YGbAx"
+ },
+ {
+   "FIELD1": 147,
+   "Campsite Name": "TAMAN EKO RIMBA SUNGAI TUA",
+   "Location": "BT CAVES",
+   "Latitude": 3.315871979,
+   "Longitude": 101.6984713,
+   "Address": "B23 Jalan Hulu Yam Bharu - Batu Caves, 68100 Batu Caves",
+   "Contact": null,
+   "Youtube": "https://youtu.be/O8HqIYcIoUo?si=Zznt7BvELkU1rv7P"
+ },
+ {
+   "FIELD1": 148,
+   "Campsite Name": "TAMAN RIMBA BUKIT LAGONG",
+   "Location": "BT CAVES",
+   "Latitude": 3.263767146,
+   "Longitude": 101.6322171,
+   "Address": "Bukit Lagong, 68100 Batu Caves, Selangor",
+   "Contact": "0361202514",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 149,
+   "Campsite Name": "TERAS DIMENSI CAMPSITE",
+   "Location": "BT ARANG",
+   "Latitude": 3.319800505,
+   "Longitude": 101.454557,
+   "Address": "TKPM, Jalan Belimbing, 45000 Batu Arang, Selangor",
+   "Contact": "0133642123",
+   "Youtube": "https://youtu.be/Txa_WhDzwL4?si=sQbB2gUWj8Gfek0p"
+ },
+ {
+   "FIELD1": 150,
+   "Campsite Name": "YAZRI FAMILY AGRO RESORT",
+   "Location": "GOMBAK",
+   "Latitude": 3.316380066,
+   "Longitude": 101.7393382,
+   "Address": "Kompartmen 10, Batu 14, Jln Gombak, lama, 68100, Selangor",
+   "Contact": "0176373253",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 151,
+   "Campsite Name": "DE KAMPUNG CAMPSITE",
+   "Location": "RAWANG",
+   "Latitude": 3.34054794,
+   "Longitude": 101.5883795,
+   "Address": "Lot 1065, Jalan Tanjung 3, Kampung Tanjung, 48000 Rawang",
+   "Contact": "01126270988",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 152,
+   "Campsite Name": "TASEK WIDURI WATER PARK",
+   "Location": "RAWANG",
+   "Latitude": 3.431075665,
+   "Longitude": 101.5885275,
+   "Address": "Jalan Widuri 3, Bukit Beruntung, 48300 Rawang, Selangor",
+   "Contact": "0134284714",
+   "Youtube": "https://youtu.be/E_BoPtw8IjM?si=3l_xB89RhGndA7ZN"
+ },
+ {
+   "FIELD1": 153,
+   "Campsite Name": "ALANG MANJA RESORT",
+   "Location": "GOMBAK",
+   "Latitude": 3.304864202,
+   "Longitude": 101.7355722,
+   "Address": "Batu 12 3/4, JALAN GOMBAK LAMA, GOMBAK, 51300 Kuala Lumpur",
+   "Contact": "0105280054",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 154,
+   "Campsite Name": "AJIN CAMPSITE",
+   "Location": "SEMUNGKIS",
+   "Latitude": 3.175820615,
+   "Longitude": 101.8263045,
+   "Address": "Jln kg sg semungkis Bt 14 kg sg semungkis, 43100 Hulu Langat, Selangor",
+   "Contact": "0127232440",
+   "Youtube": "https://youtu.be/15Z9eFRZQ2E?si=b4jRt-ha8nsSnVbf"
+ },
+ {
+   "FIELD1": 155,
+   "Campsite Name": "ALPINE CAMP",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.144674957,
+   "Longitude": 101.9172105,
+   "Address": "Jalan Kg. Orang Asli Paya Lebar, Batu 23, 43100 Hulu Langat, Selangor",
+   "Contact": "01119115262",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 157,
+   "Campsite Name": "ANUGERAH ALAM CAMPSITE",
+   "Location": "SEMENYIH ",
+   "Latitude": 3.030626991,
+   "Longitude": 101.9030616,
+   "Address": "2WJ3+56 Semenyih, Selangor",
+   "Contact": " 0167156357",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 158,
+   "Campsite Name": "ASLI ADVENTURE CAMP",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.222297158,
+   "Longitude": 101.8634707,
+   "Address": "43100 Hulu Langat, Selangor",
+   "Contact": "0136799276",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 159,
+   "Campsite Name": "ASLI FARM RESORT ULU SEMENYIH",
+   "Location": "SEMENYIH",
+   "Latitude": 3.017744032,
+   "Longitude": 101.9052456,
+   "Address": "Lot1356, Stor Kampung Orang Asli Ulu Semenyih, 43500, Selangor",
+   "Contact": "0133983382",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 160,
+   "Campsite Name": "BAGAN LALANG CAMPSITE",
+   "Location": "TANJUNG SEPAT",
+   "Latitude": 2.597815971,
+   "Longitude": 101.6924234,
+   "Address": "Unnamed Road, Kampung, Bagan Lalang, 43950 Tanjong Sepat, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/uMMe3ZavAKA?si=j5sgSrw0xcRuud-C"
+ },
+ {
+   "FIELD1": 161,
+   "Campsite Name": "BAMBOO CAMP & RESORT",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.23388898,
+   "Longitude": 101.8617008,
+   "Address": "Jalan Sg. Lepo B52, 43100 Hulu Langat, Selangor",
+   "Contact": "0176562406",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 163,
+   "Campsite Name": "BATANGSI RIVER WATERFALLS",
+   "Location": "SEMENYIH",
+   "Latitude": 3.050034943,
+   "Longitude": 101.9272375,
+   "Address": "Semenyih, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 164,
+   "Campsite Name": "BETONG RIVERSIDE CAMPSITE",
+   "Location": "SEMUNGKIS",
+   "Latitude": 3.155342786,
+   "Longitude": 101.8264896,
+   "Address": "Jalan Kg Sungai Semungkis,  43100 Hulu Langat",
+   "Contact": "+60 19-550 5970 ",
+   "Youtube": "https://youtu.be/_Y9qywbrIGA?si=UVoiOruA-24QegEu"
+ },
+ {
+   "FIELD1": 165,
+   "Campsite Name": "BIN KHALID SONS CAMPGROUND",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.206901374,
+   "Longitude": 101.8593915,
+   "Address": "Lubuk Manggis, 43100 Hulu Langat, Selangor",
+   "Contact": "0172524049",
+   "Youtube": "https://youtu.be/eTsGslpiD-I?si=YY5oR2r6OYdpwEgR"
+ },
+ {
+   "FIELD1": 166,
+   "Campsite Name": "CAHAYA WARISAN CAMPGROUND",
+   "Location": "SG GABAI",
+   "Latitude": 3.162553934,
+   "Longitude": 101.9011019,
+   "Address": "Air terjun sungai gabai, Kg, Jalan Sungai Lui, 43100 Hulu Langat, Selangor",
+   "Contact": "011 5651 9091",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 167,
+   "Campsite Name": "D'SUNGAI LEPOH CHALET & KEM",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.22143457,
+   "Longitude": 101.8641504,
+   "Address": "Lot 3461, KM22 Sungai Lepoh, Kampung Kuala 43100, 43100 Hulu Langat, Selangor",
+   "Contact": "0192724714",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 168,
+   "Campsite Name": "CAMPSITE ATOK AM, SUNGAI LOPO",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.222289134,
+   "Longitude": 101.8639,
+   "Address": "Lot 3460 batu 22 sungai lopo, 43100 Hulu Langat, Selangor",
+   "Contact": "0192108221",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 169,
+   "Campsite Name": "CAMPSITE DE RIMBA",
+   "Location": "DUSUN TUA",
+   "Latitude": 3.131861692,
+   "Longitude": 101.8408618,
+   "Address": "1187 Jln Kg Hj Palil, Batu 16, 3/4, Kampung Dusun Tua, 43100 Hulu Langat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 170,
+   "Campsite Name": "CASA DE LUI CAMPSITE",
+   "Location": "SG LUI",
+   "Latitude": 3.166648171,
+   "Longitude": 101.8793114,
+   "Address": "Lot 13771, Batu 20 1/2, Jalan Sungai Lui, Kampung Masjid, 43100 Hulu Langat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 171,
+   "Campsite Name": "CHONGKAK PARK & RESORT",
+   "Location": "KAMPUNG PADANG",
+   "Latitude": 3.210183953,
+   "Longitude": 101.8432655,
+   "Address": "Jalan Sungai Congkak, Kampung Padang, 43100 Hulu Langat, Selangor",
+   "Contact": "0355132000",
+   "Youtube": "https://youtu.be/8dE8mDh4klo?si=EGWaKJmih38MnwQG"
+ },
+ {
+   "FIELD1": 172,
+   "Campsite Name": "CONGKAK ECO RESORT (PRIVATE)",
+   "Location": "KAMPUNG PADANG",
+   "Latitude": 3.198900151,
+   "Longitude": 101.8510951,
+   "Address": "Unnamed Road,, Kampung Padang, 43100 Hulu Langat, Selangor",
+   "Contact": "0173090190",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 173,
+   "Campsite Name": "D'TEPIAN SUNGAI CAMPSITE",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.200701651,
+   "Longitude": 101.8486616,
+   "Address": "Jalan D'Tepian Sungai Campsite, Kampung Padang, 43100 Hulu Langat, Selangor",
+   "Contact": "014 397 7751",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 174,
+   "Campsite Name": "D'SUNGAI LUI CAMPSITE",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.163878309,
+   "Longitude": 101.8882808,
+   "Address": "Jalan Sungai Lui, Kampung Sungai Pagoh, 43100 Hulu Langat, Selangor",
+   "Contact": "Puan Fida (011-28557691)",
+   "Youtube": "https://youtu.be/Jlg1DJOoRyo?si=2-USwKV42dyqMh9G"
+ },
+ {
+   "FIELD1": 175,
+   "Campsite Name": "DAMAI RIVERVIEW HULU LANGAT",
+   "Location": "SUNGAI LUI",
+   "Latitude": 3.156127098,
+   "Longitude": 101.9000376,
+   "Address": "Lot 4886 Batu 22, Kampung Sungai Lui, 43100, Selangor",
+   "Contact": "0193355876",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 176,
+   "Campsite Name": "DERUAN RIMBA CAMPSITE HULU LANGAT ",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.166354271,
+   "Longitude": 101.9059447,
+   "Address": "Air Terjun Sungai Gabai, Sungai lui, 43100 Hulu Langat, Selangor",
+   "Contact": "0123767093",
+   "Youtube": "https://youtu.be/Ue0NWWhtmHQ?si=pKbWQT7tmefrfm5T"
+ },
+ {
+   "FIELD1": 177,
+   "Campsite Name": "D'KELULUT CAMPSITE",
+   "Location": "SEMENYIH",
+   "Latitude": 3.026541916,
+   "Longitude": 101.8950473,
+   "Address": "Lot 13, TKPM Sunga Batangsi, Jalan Sungai Lalang, Kampung Pasir Baru, 43250 Semenyih, Selangor",
+   "Contact": "0192490555",
+   "Youtube": "https://youtu.be/sz1evxy44rI?si=TK3oFzm4UypWrWLR"
+ },
+ {
+   "FIELD1": 178,
+   "Campsite Name": "D'PANGSUN RIVER",
+   "Location": "KG LEPOK",
+   "Latitude": 3.211380937,
+   "Longitude": 101.8717929,
+   "Address": "11599, B52, Kampung Kuala Pansoon, 43100 Hulu Langat, Selangor",
+   "Contact": "0126690704",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 179,
+   "Campsite Name": "D'TEPIAN SUNGAI CAMPSITE",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.200723075,
+   "Longitude": 101.8486938,
+   "Address": "Jalan D'Tepian Sungai Campsite, Kampung Padang, 43100 Hulu Langat, Selangor",
+   "Contact": "0143977751",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 180,
+   "Campsite Name": "ECO GARDEN HJ ZAHDI & HJH SARIPAH",
+   "Location": "SG GABAI",
+   "Latitude": 3.162661272,
+   "Longitude": 101.9019218,
+   "Address": "Jalan Sungai Gabai, 43100 Hulu Langat, Selangor",
+   "Contact": "01118814881",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 181,
+   "Campsite Name": "ECO TREE CAMP @SEMUNGKIS",
+   "Location": "SEMUNGKIS",
+   "Latitude": 3.180693931,
+   "Longitude": 101.8267584,
+   "Address": "Kompartmen 75 & 76, Hutan Simpan, Jln Sg Semungkis,",
+   "Contact": "0197890801",
+   "Youtube": "https://youtu.be/bA3Uct1xx_w?si=ugnpw_QuZSYmTDga"
+ },
+ {
+   "FIELD1": 182,
+   "Campsite Name": "EDDIE PUTRA PHOTO CAMP",
+   "Location": "SG MAKAU",
+   "Latitude": 3.121131268,
+   "Longitude": 101.8271396,
+   "Address": "Kampung Baru Sungai Makau, 43100 Hulu Langat",
+   "Contact": "0129401174",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 184,
+   "Campsite Name": "GUNUNG NUANG RECREATIONAL FOREST",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.217578371,
+   "Longitude": 101.8827467,
+   "Address": "Kampung Pungsun, 43100 Hulu Langat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 185,
+   "Campsite Name": "HAMMOCKS BY THE RIVER",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.121475368,
+   "Longitude": 101.8262956,
+   "Address": "Lot 617, Jalan Sungai Makau, Batu 14 Hulu Langat, 47310 Hulu Langat, Selangor",
+   "Contact": "601128108190",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 186,
+   "Campsite Name": "IJAM CAMPSITE",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.17720448,
+   "Longitude": 101.8251726,
+   "Address": "Batu 14 Hulu Langat, 43100 Hulu Langat, Selangor",
+   "Contact": "013 809 9849",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 187,
+   "Campsite Name": "IMPIAN D'SUNGAI CAMPSITE (IMPIAN COUNTRY RESORT)",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.155866248,
+   "Longitude": 101.8264692,
+   "Address": "5R4G+P9 Sumber air mineral, 43100 Hulu Langat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 188,
+   "Campsite Name": "JALAN KEM RIMBARIA SG CONGKAK",
+   "Location": "SG CONGKAK",
+   "Latitude": 3.201595404,
+   "Longitude": 101.8491854,
+   "Address": "Unnamed Road, Kampung Padang, 43100 Hulu Langat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 189,
+   "Campsite Name": "JERAM BATU AMPA PON",
+   "Location": "PANGSUN",
+   "Latitude": 3.210924205,
+   "Longitude": 101.8716568,
+   "Address": "Batu 22, Kampung Orang Asli 43100 Kampong Kuala Pangsun,",
+   "Contact": "0198680058",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 190,
+   "Campsite Name": "JERINIS DUSUN CAMPSITE",
+   "Location": "PANGSUN",
+   "Latitude": 3.210163101,
+   "Longitude": 101.8778231,
+   "Address": "Kampung Kuala Pansoon, 43100 Hulu Langat, Selangor",
+   "Contact": "0138669857",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 191,
+   "Campsite Name": "KEBUN ATOK",
+   "Location": "SEMUNGKIS",
+   "Latitude": 3.140989928,
+   "Longitude": 101.8241239,
+   "Address": "Lot 2875, Kampung Sungai Semungkis, 43100 Hulu Langat, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/Z6j1E8punpg?si=2jEoympfRBSxcZby"
+ },
+ {
+   "FIELD1": 192,
+   "Campsite Name": "KEM LATIHAN & REKREASI SUNGAI CONGKAK",
+   "Location": "SG CONGKAK",
+   "Latitude": 3.209858509,
+   "Longitude": 101.8429784,
+   "Address": "Lot 3477, Batu 20, Sungai Congkak, 43100 Hulu Langat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 193,
+   "Campsite Name": "KEM LOLO",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.246351099,
+   "Longitude": 101.9057145,
+   "Address": "43100 Hulu Langat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 194,
+   "Campsite Name": "KEM SANTAI SUNGAI GABAI",
+   "Location": "SG GABAI",
+   "Latitude": 3.163896384,
+   "Longitude": 101.9029519,
+   "Address": "Pintu Masuk Air Terjun Sungai Gabai, kg, Jalan Sungai Lui",
+   "Contact": "0173945247",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 195,
+   "Campsite Name": "KINGFISHER HULU LANGAT",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.153423916,
+   "Longitude": 101.8261337,
+   "Address": "Jalan Taman Agroteknologi, Kampung Sungai Semungkis,, Hulu Langat, 43100 Batu 14 1/2 Hulu Langat, Selangor",
+   "Contact": "0379312182",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 196,
+   "Campsite Name": "LAKALHAM CAMPSITE",
+   "Location": "SEMUNGKIS",
+   "Latitude": 3.173261695,
+   "Longitude": 101.8262814,
+   "Address": "Batu 14 1/2 Jalan Hulu Langat, 43100 Hulu Langat, Selangor",
+   "Contact": "0193797424",
+   "Youtube": "https://youtu.be/mtAoLU2-o9c?si=nVBV2JAhLWzt7WOl"
+ },
+ {
+   "FIELD1": 197,
+   "Campsite Name": "LAMAN RIADAH JERAM TINGGI",
+   "Location": "SEMUNGKIS",
+   "Latitude": 3.168974533,
+   "Longitude": 101.8264336,
+   "Address": "43100 Hulu Langat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 198,
+   "Campsite Name": "LATA BERINGIN",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.174834069,
+   "Longitude": 101.8254244,
+   "Address": "43100 Hulu Langat, Selangor",
+   "Contact": "0196443488",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 199,
+   "Campsite Name": "AG MANGGIS COTTAGE",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.205784398,
+   "Longitude": 101.8596225,
+   "Address": "Bt 21 kg lubuk Manggis jln pansun Hulu Langat selangor Kajang, 43100 Kuala Lumpur, Selangor",
+   "Contact": "0122602523",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 200,
+   "Campsite Name": "LUI FARM RESORT",
+   "Location": "SG LUI",
+   "Latitude": 3.167220471,
+   "Longitude": 101.8787049,
+   "Address": "1878, Batu 20, Jalan Sungai Lui, Kampung Sg Lui, ",
+   "Contact": "0162066848",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 201,
+   "Campsite Name": "MOONKISSED BY THE RIVER",
+   "Location": "SEMUNGKIS",
+   "Latitude": 3.174223069,
+   "Longitude": 101.8256903,
+   "Address": "Batu 14 1/2 Jalan Sungai Semungkis, 43100 Hulu Langat, Selangor",
+   "Contact": "013 773 4957",
+   "Youtube": "https://youtu.be/E8HbiIUsuC0?si=ZrGATpHkHAkMLi7-"
+ },
+ {
+   "FIELD1": 202,
+   "Campsite Name": "MUJAHADAH AGROCAMP (MAC) CAMPSITE",
+   "Location": "SEMENYIH",
+   "Latitude": 3.024381844,
+   "Longitude": 101.8949393,
+   "Address": "2VFV+JX Semenyih, Selangor",
+   "Contact": "0135025210",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 203,
+   "Campsite Name": "NUR LEMBAH PANGSUN ECO RESORT",
+   "Location": "PANGSUN",
+   "Latitude": 3.193917413,
+   "Longitude": 101.8472471,
+   "Address": "Jalan Hulu Langat Ulu Perdik Batu 19, Jalan 3/4, 43100 Kajang,",
+   "Contact": "0390217387",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 205,
+   "Campsite Name": "PONDOK DADDY",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.164856434,
+   "Longitude": 101.9026536,
+   "Address": "5W73+V3, 43100 Hulu Langat, Selangor",
+   "Contact": "0126846857",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 206,
+   "Campsite Name": "PUSAT REKREASI SUNGAI CONGKAK (PUBLIC)",
+   "Location": "SUNGAI CONGKAK",
+   "Latitude": 3.209310085,
+   "Longitude": 101.8434741,
+   "Address": "Batu 20, Jalan Sungai Congkak, Kampung Padang, 43100 Hulu Langat, Selangor",
+   "Contact": "0132254803",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 207,
+   "Campsite Name": "RAINBOW HOUSE CAMPSITE",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.113729618,
+   "Longitude": 101.8623087,
+   "Address": "B117 110, Jalan Sungai Tekali, Batu 14 Hulu Langat, 43100 Hulu Langat, Selangor",
+   "Contact": "016-334 4995",
+   "Youtube": "https://youtu.be/k340tvtd9gk?si=Qo33iG02-JqCkIr8"
+ },
+ {
+   "FIELD1": 209,
+   "Campsite Name": "RAKIT BULOH RIVERSIDE (in Suraya Riverside)",
+   "Location": "PANGSOON",
+   "Latitude": 3.210300497,
+   "Longitude": 101.8772584,
+   "Address": "Kampung Kuala Pansoon, 43100 Hulu Langat, Selangor",
+   "Contact": "01157718781",
+   "Youtube": "https://youtu.be/6vCLDcoZnY0?si=4bSLt2qiWeLaSorW"
+ },
+ {
+   "FIELD1": 210,
+   "Campsite Name": "RUMAH KEBUN CAMPING GROUND",
+   "Location": "SEMUNGKIS",
+   "Latitude": 3.166002184,
+   "Longitude": 101.8258901,
+   "Address": "Batu 14, Kampung Sungai Semungkis, ",
+   "Contact": "0192224956",
+   "Youtube": "https://youtu.be/u9WfTjh-ZGc?si=29z8-1aI1_55usVw"
+ },
+ {
+   "FIELD1": 211,
+   "Campsite Name": "SANTAI D'LEWENG HULU LANGAT",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.153594524,
+   "Longitude": 101.9210142,
+   "Address": "JALAN KG ORANG ASLI PAYA LEBAR, Jalan Sungai Lui, 43100 Hulu Langat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 212,
+   "Campsite Name": "SEMUNGKIS DATARAN CAMP",
+   "Location": "SEMUNGKIS",
+   "Latitude": 3.178873617,
+   "Longitude": 101.8244185,
+   "Address": "Hutan Simpan Kekal, Sg Semungkis, ",
+   "Contact": "0199236680",
+   "Youtube": "https://youtu.be/rPfL72yod74?si=Xlvqp0QHBsGuonv2"
+ },
+ {
+   "FIELD1": 213,
+   "Campsite Name": "SIFU ARE SUNGAI CONGKAK",
+   "Location": "KAMPUNG PADANG",
+   "Latitude": 3.197855076,
+   "Longitude": 101.8536781,
+   "Address": "Kampung Padang, 43100 Hulu Langat, Selangor",
+   "Contact": "0135841430",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 214,
+   "Campsite Name": "SKYCAMP BY RIMBA SEGARA",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.209539937,
+   "Longitude": 101.8609051,
+   "Address": "Skycamp Lot 3683 Lubok Mangis batu 21, 43100 Hulu Langat, Selangor",
+   "Contact": "013 621 0449",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 215,
+   "Campsite Name": "SKYTREK SUNGAI CONGKAK",
+   "Location": "SG CONGKAK",
+   "Latitude": 3.209263709,
+   "Longitude": 101.842278,
+   "Address": "Batu 20 1/2, Jalan Sungai Congkak, Kampung Padang,",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 218,
+   "Campsite Name": "TEPIAN BAMBU GLAMPSITE",
+   "Location": "SG GABAI",
+   "Latitude": 3.165981096,
+   "Longitude": 101.9056482,
+   "Address": "Jalan Sungai Gabai, Kampung Sungai Pagoh, 43100 Hulu Langat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 220,
+   "Campsite Name": "TERATAK TOK MAT CAMPSITE",
+   "Location": "SG GABAI",
+   "Latitude": 3.165182159,
+   "Longitude": 101.9028507,
+   "Address": "5W73+C2, Sungai Gabai, 43100 Hulu Langat, Selangor",
+   "Contact": "0139507708",
+   "Youtube": "https://youtu.be/PQ5kZOryd0Y?si=JqVB-ZHdmLtFzfxh"
+ },
+ {
+   "FIELD1": 221,
+   "Campsite Name": "TOK GINDO CAMPSITE",
+   "Location": "KUALA POMSOM",
+   "Latitude": 3.210701473,
+   "Longitude": 101.8717837,
+   "Address": "Batu 22 Kampung Orang Asli Kuala Pomsom, 43100 Hulu Langat, Selangor",
+   "Contact": "0133649484",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 222,
+   "Campsite Name": "TRYVELLER CAMPSITE@UBIPADI",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.163476651,
+   "Longitude": 101.8585664,
+   "Address": "18, Batu, 673, Jalan Sg. Jerang, 43100 Hulu Langat, Selangor",
+   "Contact": "0177299767",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 223,
+   "Campsite Name": "UBIPADI LEISURE ",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.163578096,
+   "Longitude": 101.8586825,
+   "Address": "Batu 18,, 673, Jalan Sg. Jerang, Kampung Jawa, 43100 Hulu Langat, Selangor",
+   "Contact": "019 777 8590",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 224,
+   "Campsite Name": "WILLOW TREE CAMPSITE",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.133669668,
+   "Longitude": 101.9167355,
+   "Address": "B32, Jalan Genting Peras-Kuala Kelawang, 43100 Hulu Langat",
+   "Contact": "016 303 4307",
+   "Youtube": "https://youtu.be/BeSW_Zenesk?si=N9NN8v32-DbRHyJt"
+ },
+ {
+   "FIELD1": 225,
+   "Campsite Name": "MADINA (DINAR) CAMPSITE/RIVERSIDE/PICNIC",
+   "Location": "SEMUNGKIS",
+   "Latitude": 3.172518845,
+   "Longitude": 101.8269146,
+   "Address": "Sungai Semungkis, Hulu Langat",
+   "Contact": "013 3346421",
+   "Youtube": "https://youtu.be/Feh1on2GHog?si=Kq7PRcWdiqDnvmI0"
+ },
+ {
+   "FIELD1": 226,
+   "Campsite Name": "SEA OF CLOUDS ",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.100228486,
+   "Longitude": 101.8280308,
+   "Address": "43100 Hulu Langat, Selangor",
+   "Contact": "0123221806",
+   "Youtube": "https://youtu.be/7gLdYvqrXgc?si=nTW_YW1mba-lzDgN&t=12"
+ },
+ {
+   "FIELD1": 227,
+   "Campsite Name": "DUSUN AKIN RESORT",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.099189099,
+   "Longitude": 101.8259094,
+   "Address": "43100 Hulu Langat, Selangor",
+   "Contact": "014-2574166",
+   "Youtube": "https://www.youtube.com/@dusunakinresort2447/videos"
+ },
+ {
+   "FIELD1": 228,
+   "Campsite Name": "CAMP ANUGERAH ALAM",
+   "Location": "SG BATANGSI",
+   "Latitude": 3.030659132,
+   "Longitude": 101.9030079,
+   "Address": "TKPM Sungai Batangsi, Jalan Kampung Pasir, 43250 Semenyih, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/qYe_p7Qg7vU?si=xWqRt7pVkCciTVZR"
+ },
+ {
+   "FIELD1": 230,
+   "Campsite Name": "RIMBA BIKERZ CAMPSITE",
+   "Location": "SUNGAI CONGKAK",
+   "Latitude": 3.207169162,
+   "Longitude": 101.8451198,
+   "Address": "Batu 20, Jalan Sungai Congkak, Kampung Padang, 43100 Hulu Langat, Selangor",
+   "Contact": "0169625224",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 231,
+   "Campsite Name": "PONDOK ALONG MIE ",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.207083186,
+   "Longitude": 101.8593922,
+   "Address": "6V45+PR, 43100 Hulu Langat, Selangor",
+   "Contact": "0176886857",
+   "Youtube": "https://youtu.be/P6uY9RhJKcQ?si=FAtCY_rWuovarLFY"
+ },
+ {
+   "FIELD1": 232,
+   "Campsite Name": "SUNGAI LOPO VILLAGE",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.218616459,
+   "Longitude": 101.8648517,
+   "Address": "Sungai LopLot 3637, Sungai Lopo Village, Jalan Sungai Lepoh, Kampung Orang Asli, 43100 Hulu Langat, Selangoro Village, Jalan Sungai Lepoh, Kampung Orang Asli, 43100 Hulu Langat, Selangor",
+   "Contact": "0122286689",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 233,
+   "Campsite Name": "SINGGAH SANTAI RESORT",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.144921576,
+   "Longitude": 101.8149677,
+   "Address": "Lot 7141, Jalan Felcra Semungkis, Batu 14 Hulu Langat, 43100 Hulu Langat, Selangor",
+   "Contact": "0390216241",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 234,
+   "Campsite Name": "DEBAMBU CAMPSITE & AGRO",
+   "Location": "SEMENYIH",
+   "Latitude": 3.093396636,
+   "Longitude": 101.8975524,
+   "Address": "Lot 2, TKPM Sungai Batangsi, Jalan Kampung Pasir, 43500 Semenyih, Selangor",
+   "Contact": "0183121431",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 235,
+   "Campsite Name": "PANTAI CUNANG",
+   "Location": "TG SEPAT",
+   "Latitude": 2.660836982,
+   "Longitude": 101.5485281,
+   "Address": "17, Jalan Pelangi 20, Pekan Tanjung Sepat, 42800 Tanjong Sepat, Selangor",
+   "Contact": "0 11-3507 6988",
+   "Youtube": "https://youtu.be/X5TyWD8u8aQ?si=vlX2vFU-DNeET4UO"
+ },
+ {
+   "FIELD1": 236,
+   "Campsite Name": "PANTAI MORIB",
+   "Location": "BANTING ",
+   "Latitude": 2.750712851,
+   "Longitude": 101.4423011,
+   "Address": "Morib, 42700 Banting, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 237,
+   "Campsite Name": "PANTAI KLANANG CAMPSITE",
+   "Location": "PANTAI KLANANG",
+   "Latitude": 2.790564336,
+   "Longitude": 101.4107517,
+   "Address": "Kampung Kelanang, Banting, Selangor",
+   "Contact": "0331872825",
+   "Youtube": "https://youtu.be/SKcoz_d0ruM?si=ydjcMaI1VizEHy1K"
+ },
+ {
+   "FIELD1": 238,
+   "Campsite Name": "PANTAI BAGAN LALANG",
+   "Location": "TG SEPAT",
+   "Latitude": 2.598790589,
+   "Longitude": 101.6909491,
+   "Address": "Bagan Lalang, 43950 Tanjong Sepat, Selangor",
+   "Contact": null,
+   "Youtube": "https://youtu.be/hw2Yd70nojQ?si=xDVfcJakgY8iuB-T"
+ },
+ {
+   "FIELD1": 239,
+   "Campsite Name": "PANTAI BATU LAUT",
+   "Location": "TG SEPAT",
+   "Latitude": 2.675390854,
+   "Longitude": 101.5154565,
+   "Address": "5, Kampung Batu Lapan, Tanjong Sepat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 240,
+   "Campsite Name": "BAGAN LALANG CAMPSITE",
+   "Location": "TG SEPAT",
+   "Latitude": 2.597794536,
+   "Longitude": 101.6924555,
+   "Address": "Unnamed Road, Kampung, Bagan Lalang, 43950 Tanjong Sepat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ },
+ {
+   "FIELD1": 241,
+   "Campsite Name": "KUALA SELANGOR CABIN CAMP (KSCC)",
+   "Location": "JERAM",
+   "Latitude": 3.266549039,
+   "Longitude": 101.3668543,
+   "Address": "Lot 4021, Jalan Rizab Zazuli, Kampung Bukit Hijau, 45800 Jeram, Selangor",
+   "Contact": "0174108067",
+   "Youtube": null
+ },
+ {
+   "FIELD1": 242,
+   "Campsite Name": "KEM SURVIVAL ANJONG CHERANDONG",
+   "Location": "KUALA KUBU BHARU",
+   "Latitude": 3.550332481,
+   "Longitude": 101.6831901,
+   "Address": "HM2M+27, 44000 Kuala Kubu Bharu, Selangor",
+   "Contact": "0173436981",
+   "Youtube": "https://www.youtube.com/watch?v=gaYlyCilb-k"
+ },
+ {
+   "FIELD1": 243,
+   "Campsite Name": "KEM TERATAK BULUH BATU HAMPAR",
+   "Location": "HULU LANGAT",
+   "Latitude": 3.15052792,
+   "Longitude": 101.9207749,
+   "Address": "Batu 24 , Sg lewing, Kampung Paya Lebar, 43100 Hulu Langat, Selangor",
+   "Contact": null,
+   "Youtube": null
+ }
+]
