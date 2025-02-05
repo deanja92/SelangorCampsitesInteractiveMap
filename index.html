@@ -3,404 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campsites Map</title>
-    <!-- Leaflet CSS -->
+    <title>Enhanced Campsites Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <!-- Leaflet.markercluster CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Awesomplete for Autocomplete -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.css">
     <style>
-        /* Gradient Background */
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
             height: 100vh;
             overflow: hidden;
+            margin: 0;
         }
-
-        /* Dark Mode */
-        body.dark-mode {
-            background: linear-gradient(135deg, #121212, #1e1e1e);
-            color: #fff;
-        }
-
-        body.dark-mode #map {
-            filter: brightness(0.8);
-        }
-
-        /* Responsive Map */
-        #map {
-            height: 80vh; /* Adjusted height to leave space for search box */
-            width: 100%; /* Full width */
-            z-index: 10; /* Lower z-index to allow overlay */
-        }
-
-        /* Loading Spinner */
-        #loading-spinner {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 24px;
-            color: #007BFF;
-            z-index: 2000;
-        }
-
-        /* Search Box and Button */
-        #search-box {
-            width: 300px;
-            padding: 10px;
-            border: 2px solid #007BFF;
-            border-radius: 25px;
-            outline: none;
-            transition: border-color 0.3s ease-in-out;
-        }
-
-        #search-box:focus {
-            border-color: #0056b3;
-        }
-
-        #search-button {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        #search-button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Theme Toggle Button */
-        #theme-toggle {
-            margin-left: 10px;
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        #theme-toggle:hover {
-            background-color: #218838;
-        }
-
-        /* Results List */
-        #results-list {
-            position: absolute; /* Overlay on top of the map */
-            top: 60px; /* Position below the search box */
-            left: 50%; /* Center horizontally */
-            transform: translateX(-50%); /* Center horizontally */
-            width: 320px; /* Fixed width */
-            max-height: 200px; /* Limit height */
-            overflow-y: auto; /* Enable scrolling */
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
-            z-index: 1000; /* Ensure it stays above the map */
-            padding: 10px;
-        }
-
-        /* Result Item Styling */
-        .result-item {
-            cursor: pointer;
-            padding: 5px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease-in-out;
-            color: black; /* Changed font color to black */
-        }
-
-        .result-item:hover {
-            background-color: #f0f0f0;
-        }
-
-        .result-item.active {
-            background-color: #007BFF;
-            color: white; /* Keep white text for active item */
-        }
-
-        /* Legend Styling */
-        #legend {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-        }
-
-        /* Navigation Buttons Styling */
-        .nav-button {
-            display: inline-block;
-            margin: 5px 0;
-            padding: 5px 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            color: white;
-            font-weight: bold;
-        }
-
-        .google-maps {
-            background-color: #4285F4; /* Google Maps blue */
-        }
-
-        .waze {
-            background-color: #FFCB05; /* Waze yellow */
-            color: black;
-        }
-
-        .apple-maps {
-            background-color: #000; /* Apple Maps black */
-        }
-
-        /* Marker Fade-In Animation */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .marker-fade-in {
-            animation: fadeIn 1s ease-in-out;
-        }
+        #map { height: 80vh; width: 100%; }
+        #controls { display: flex; justify-content: center; padding: 10px; gap: 10px; }
+        button, select, input { padding: 10px; border-radius: 5px; border: none; }
+        .error-message { color: red; text-align: center; display: none; }
     </style>
 </head>
-<body class="light-mode">
-
-    <!-- Loading Spinner -->
-    <div id="loading-spinner" style="display: none;">Loading...</div>
-
-    <!-- Search Box -->
-    <div style="margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
-        <input type="text" id="search-box" placeholder="Search by name or address...">
+<body>
+    <div id="controls">
+        <input type="text" id="search-box" placeholder="Search campsites...">
         <button id="search-button">Search</button>
-        <button id="theme-toggle">Toggle Dark Mode</button>
+        <select id="filter-type">
+            <option value="all">All</option>
+            <option value="park">Parks</option>
+            <option value="lake">Lakes</option>
+            <option value="forest">Forests</option>
+        </select>
+        <button id="geo-button">Find Me</button>
+        <select id="map-theme">
+            <option value="street">Street</option>
+            <option value="satellite">Satellite</option>
+            <option value="terrain">Terrain</option>
+        </select>
     </div>
-
-    <!-- Map -->
+    <p class="error-message" id="error-message">Error loading campsites. Please try again.</p>
     <div id="map"></div>
-
-    <!-- Results List -->
-    <div id="results-list" style="display: none;"></div> <!-- Initially hidden -->
-
-    <!-- Legend -->
-    <div id="legend">
-        <p><span style="color: #4CAF50; font-weight: bold;">●</span> Park</p>
-        <p><span style="color: #2196F3; font-weight: bold;">●</span> Lake</p>
-        <p><span style="color: #8BC34A; font-weight: bold;">●</span> Forest</p>
-        <p><span style="color: #FF9800; font-weight: bold;">●</span> Other</p>
-    </div>
-
-    <!-- Footer -->
-    <footer style="text-align: center; margin-top: 20px; font-size: 12px; color: #666;">
-        Powered by <a href="https://leafletjs.com/" target="_blank">Leaflet</a> and 
-        <a href="https://openstreetmap.org/" target="_blank">OpenStreetMap</a>. 
-        Icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.
-    </footer>
-
-    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <!-- Leaflet.markercluster JS -->
     <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
-    <!-- Awesomplete JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.js"></script>
     <script>
-        // Initialize the map
-        var map = L.map('map').setView([3.0, 101.5], 10); // Centered on Selangor
-
-        // Add OpenStreetMap tiles
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
-
-        // Create a marker cluster group
-        var markerCluster = L.markerClusterGroup({
-            spiderfyOnMaxZoom: true, // Enable spiderfying markers when zoomed in
-            showCoverageOnHover: false, // Disable showing coverage area on hover
-            zoomToBoundsOnClick: true // Zoom to bounds of cluster on click
-        });
-
-        // Store markers globally so we can reference them later
+        var map = L.map('map').setView([3.0, 101.5], 10);
+        var markerCluster = L.markerClusterGroup();
         var markers = {};
 
-        // Show loading spinner before fetching data
-        document.getElementById('loading-spinner').style.display = 'block';
+        var layers = {
+            street: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }),
+            satellite: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { attribution: '© OpenTopoMap' }),
+            terrain: L.tileLayer('https://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=your_api_key', { attribution: '© Thunderforest' })
+        };
 
-        // Fetch the data from data.json
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                // Hide loading spinner after data is loaded
-                document.getElementById('loading-spinner').style.display = 'none';
-                window.campsites = data;
+        layers.street.addTo(map);
 
-                // Add autocomplete suggestions to the search box
-                const campsiteNames = data.map(campsite => campsite.Name);
-                new Awesomplete(document.getElementById('search-box'), {
-                    list: campsiteNames
-                });
+        document.getElementById('map-theme').addEventListener('change', function() {
+            map.eachLayer(layer => map.removeLayer(layer));
+            layers[this.value].addTo(map);
+        });
 
-                // Add markers to the map using the data
-                addMarkersToMap(data);
-            })
-            .catch(error => {
-                console.error('Error loading the data:', error);
-                document.getElementById('loading-spinner').style.display = 'none';
+        function getColor(type) {
+            return type === 'park' ? '#4CAF50' : type === 'lake' ? '#2196F3' : type === 'forest' ? '#8BC34A' : '#FF9800';
+        }
+
+        function addMarkers(data) {
+            data.forEach(site => {
+                let marker = L.marker([site.Latitude, site.Longitude]).bindPopup(`<b>${site.Name}</b><br>${site.Address}`);
+                markerCluster.addLayer(marker);
+                markers[site.Name] = marker;
             });
-
-        // Function to add markers to the map
-        function addMarkersToMap(campsites) {
-            campsites.forEach(campsite => {
-                // Create the popup content with multiple navigation buttons
-                var popupContent = `
-                    <b>Name:</b> ${campsite.Name}<br>
-                    <b>Location:</b> ${campsite.Location}<br>
-                    <b>Address:</b> ${campsite.Address}<br>
-                    <b>Contact:</b> ${campsite.ContactNumber}<br>
-                    <div style="margin-top: 10px;">
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=${campsite.Latitude},${campsite.Longitude}" 
-                           target="_blank" 
-                           class="nav-button google-maps">
-                            Get Directions (Google Maps)
-                        </a><br>
-                        <a href="https://waze.com/ul?ll=${campsite.Latitude},${campsite.Longitude}&navigate=yes" 
-                           target="_blank" 
-                           class="nav-button waze">
-                            Get Directions (Waze)
-                        </a><br>
-                        <a href="http://maps.apple.com/?daddr=${campsite.Latitude},${campsite.Longitude}" 
-                           target="_blank" 
-                           class="nav-button apple-maps">
-                            Get Directions (Apple Maps)
-                        </a>
-                    </div>
-                `;
-
-                // Determine the marker color based on location
-                let markerClass = 'default'; // Default color
-                if (campsite.Location.toLowerCase().includes('park')) {
-                    markerClass = 'park';
-                } else if (campsite.Location.toLowerCase().includes('lake')) {
-                    markerClass = 'lake';
-                } else if (campsite.Location.toLowerCase().includes('forest')) {
-                    markerClass = 'forest';
-                }
-
-                // Create a custom HTML marker with an icon and the campsite name
-                var customMarkerHtml = `
-                    <div class="labeled-marker">
-                        <i class="fas fa-campground" style="color: ${getColor(markerClass)};"></i>
-                    </div>
-                `;
-
-                // Use a divIcon to create a custom marker
-                var customMarker = L.divIcon({
-                    className: '', // No default Leaflet classes
-                    html: customMarkerHtml, // Use the custom HTML
-                    iconSize: [null, null] // Let the size be determined by the content
-                });
-
-                // Add the custom marker to the marker cluster group
-                var marker = L.marker([campsite.Latitude, campsite.Longitude], { icon: customMarker })
-                    .bindPopup(popupContent); // Show the popup with the info
-
-                markerCluster.addLayer(marker); // Add the marker to the cluster group
-
-                // Add fade-in animation to the marker
-                marker.on('add', () => {
-                    L.DomUtil.addClass(marker._icon, 'marker-fade-in');
-                });
-
-                // Store the marker globally for easy access during search
-                markers[campsite.Name] = marker;
-            });
-
-            // Add the marker cluster group to the map
             map.addLayer(markerCluster);
         }
 
-        // Helper function to get marker color based on class
-        function getColor(markerClass) {
-            switch (markerClass) {
-                case 'park': return '#4CAF50'; // Green
-                case 'lake': return '#2196F3'; // Blue
-                case 'forest': return '#8BC34A'; // Light green
-                default: return '#FF9800'; // Orange
-            }
-        }
+        fetch('data.json').then(res => res.json()).then(data => {
+            document.getElementById('error-message').style.display = 'none';
+            window.campsites = data;
+            new Awesomplete(document.getElementById('search-box'), { list: data.map(c => c.Name) });
+            addMarkers(data);
+        }).catch(() => document.getElementById('error-message').style.display = 'block');
 
-        // Search functionality
-        document.getElementById('search-button').addEventListener('click', () => {
-            const query = document.getElementById('search-box').value.toLowerCase(); // Get the search query
-            const results = window.campsites.filter(campsite => {
-                // Check if the query matches the name or address (case-insensitive)
-                return campsite.Name.toLowerCase().includes(query) || campsite.Address.toLowerCase().includes(query);
-            });
-
-            // Clear previous results
-            const resultsList = document.getElementById('results-list');
-            resultsList.innerHTML = '';
-            resultsList.style.display = 'none'; // Hide initially
-
-            if (results.length > 0) {
-                // Display all matching results in the list
-                results.forEach(result => {
-                    const resultItem = document.createElement('div');
-                    resultItem.className = 'result-item';
-                    resultItem.textContent = result.Name;
-
-                    // Add click event to zoom to the campsite
-                    resultItem.addEventListener('click', () => {
-                        // Remove active class from all items
-                        document.querySelectorAll('.result-item').forEach(item => item.classList.remove('active'));
-
-                        // Add active class to the clicked item
-                        resultItem.classList.add('active');
-
-                        const marker = markers[result.Name]; // Get the marker for the selected campsite
-
-                        // Zoom directly to the marker
-                        map.setView([result.Latitude, result.Longitude], 18); // Higher zoom level for micro-zoom
-
-                        // Open the popup for the marker
-                        marker.openPopup();
-
-                        // Hide the results list after selection
-                        resultsList.style.display = 'none';
-                    });
-
-                    resultsList.appendChild(resultItem);
-                });
-
-                // Show the results list
-                resultsList.style.display = 'block';
-            } else {
-                resultsList.innerHTML = '<p>No matching campsites found.</p>';
-                resultsList.style.display = 'block';
+        document.getElementById('search-button').addEventListener('click', function() {
+            let query = document.getElementById('search-box').value.toLowerCase();
+            let result = window.campsites.find(c => c.Name.toLowerCase().includes(query));
+            if (result) {
+                map.setView([result.Latitude, result.Longitude], 15);
+                markers[result.Name].openPopup();
             }
         });
 
-        // Dark Mode Toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            document.body.classList.toggle('light-mode');
+        document.getElementById('geo-button').addEventListener('click', function() {
+            navigator.geolocation.getCurrentPosition(pos => {
+                let userMarker = L.marker([pos.coords.latitude, pos.coords.longitude]).bindPopup("You are here").addTo(map);
+                map.setView([pos.coords.latitude, pos.coords.longitude], 14);
+            }, () => alert("Geolocation not available"));
+        });
+
+        document.getElementById('filter-type').addEventListener('change', function() {
+            let selectedType = this.value;
+            markerCluster.clearLayers();
+            window.campsites.filter(c => selectedType === 'all' || c.Type === selectedType).forEach(site => {
+                markerCluster.addLayer(markers[site.Name]);
+            });
+            map.addLayer(markerCluster);
         });
     </script>
 </body>
