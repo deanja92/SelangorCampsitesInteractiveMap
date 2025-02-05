@@ -73,11 +73,35 @@
     <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.js"></script>
     <script>
-        var resultsList = document.getElementById('results-list');
+        var map = L.map('map').setView([3.0, 101.5], 10);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        var markerCluster = L.markerClusterGroup();
+        var markers = {};
+
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                window.campsites = data;
+                data.forEach(site => {
+                    let marker = L.marker([site.Latitude, site.Longitude]).bindPopup(
+                        `<b>${site.Name}</b><br>
+                         <b>Contact:</b> ${site.ContactNumber}<br>
+                         <a href='https://www.google.com/maps/dir/?api=1&destination=${site.Latitude},${site.Longitude}' target='_blank'>Get Directions</a>`
+                    );
+                    markerCluster.addLayer(marker);
+                    markers[site.Name] = marker;
+                });
+                map.addLayer(markerCluster);
+            })
+            .catch(() => document.getElementById('error-message').style.display = 'block');
 
         document.getElementById('search-button').addEventListener('click', function() {
             let query = document.getElementById('search-box').value.toLowerCase();
             let results = window.campsites.filter(c => c.Name.toLowerCase().includes(query));
+            let resultsList = document.getElementById('results-list');
             resultsList.innerHTML = '';
             resultsList.style.display = results.length ? 'block' : 'none';
             
