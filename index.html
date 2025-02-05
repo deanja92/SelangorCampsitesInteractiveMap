@@ -17,9 +17,24 @@
             overflow: hidden;
             margin: 0;
         }
-        #map { height: 80vh; width: 100%; }
-        #controls { display: flex; justify-content: center; padding: 10px; gap: 10px; }
-        button, select, input { padding: 10px; border-radius: 5px; border: none; }
+        #map { height: 80vh; width: 100%; position: relative; z-index: 1; }
+        #controls { display: flex; justify-content: center; padding: 10px; gap: 10px; z-index: 2; position: relative; }
+        #results-list {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            max-height: 200px;
+            overflow-y: auto;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 10px;
+            display: none;
+        }
         .error-message { color: red; text-align: center; display: none; }
     </style>
 </head>
@@ -40,72 +55,32 @@
             <option value="terrain">Terrain</option>
         </select>
     </div>
+    <div id="results-list"></div>
     <p class="error-message" id="error-message">Error loading campsites. Please try again.</p>
     <div id="map"></div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.js"></script>
     <script>
-        var map = L.map('map').setView([3.0, 101.5], 10);
-        var markerCluster = L.markerClusterGroup();
-        var markers = {};
-
-        var layers = {
-            street: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }),
-            satellite: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { attribution: '© OpenTopoMap' }),
-            terrain: L.tileLayer('https://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=your_api_key', { attribution: '© Thunderforest' })
-        };
-
-        layers.street.addTo(map);
-
-        document.getElementById('map-theme').addEventListener('change', function() {
-            map.eachLayer(layer => map.removeLayer(layer));
-            layers[this.value].addTo(map);
-        });
-
-        function getColor(type) {
-            return type === 'park' ? '#4CAF50' : type === 'lake' ? '#2196F3' : type === 'forest' ? '#8BC34A' : '#FF9800';
-        }
-
-        function addMarkers(data) {
-            data.forEach(site => {
-                let marker = L.marker([site.Latitude, site.Longitude]).bindPopup(`<b>${site.Name}</b><br>${site.Address}`);
-                markerCluster.addLayer(marker);
-                markers[site.Name] = marker;
-            });
-            map.addLayer(markerCluster);
-        }
-
-        fetch('data.json').then(res => res.json()).then(data => {
-            document.getElementById('error-message').style.display = 'none';
-            window.campsites = data;
-            new Awesomplete(document.getElementById('search-box'), { list: data.map(c => c.Name) });
-            addMarkers(data);
-        }).catch(() => document.getElementById('error-message').style.display = 'block');
+        var resultsList = document.getElementById('results-list');
 
         document.getElementById('search-button').addEventListener('click', function() {
             let query = document.getElementById('search-box').value.toLowerCase();
-            let result = window.campsites.find(c => c.Name.toLowerCase().includes(query));
-            if (result) {
-                map.setView([result.Latitude, result.Longitude], 15);
-                markers[result.Name].openPopup();
-            }
-        });
-
-        document.getElementById('geo-button').addEventListener('click', function() {
-            navigator.geolocation.getCurrentPosition(pos => {
-                let userMarker = L.marker([pos.coords.latitude, pos.coords.longitude]).bindPopup("You are here").addTo(map);
-                map.setView([pos.coords.latitude, pos.coords.longitude], 14);
-            }, () => alert("Geolocation not available"));
-        });
-
-        document.getElementById('filter-type').addEventListener('change', function() {
-            let selectedType = this.value;
-            markerCluster.clearLayers();
-            window.campsites.filter(c => selectedType === 'all' || c.Type === selectedType).forEach(site => {
-                markerCluster.addLayer(markers[site.Name]);
+            let results = window.campsites.filter(c => c.Name.toLowerCase().includes(query));
+            resultsList.innerHTML = '';
+            resultsList.style.display = results.length ? 'block' : 'none';
+            
+            results.forEach(result => {
+                let item = document.createElement('div');
+                item.className = 'result-item';
+                item.textContent = result.Name;
+                item.addEventListener('click', () => {
+                    map.setView([result.Latitude, result.Longitude], 15);
+                    markers[result.Name].openPopup();
+                    resultsList.style.display = 'none';
+                });
+                resultsList.appendChild(item);
             });
-            map.addLayer(markerCluster);
         });
     </script>
 </body>
