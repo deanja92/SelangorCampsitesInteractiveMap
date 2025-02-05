@@ -1,113 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selangor Campsites Map</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campsites Map</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        #map { height: 600px; }
+    </style>
 </head>
 <body>
-  <h1>Interactive Map of Campsites in Selangor</h1>
-  <div id="map"></div>
+    <div id="map"></div>
 
-  <!-- Load Leaflet.js -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    // Initialize the map
-    const map = L.map('map').setView([3.0738, 101.5183], 10); // Center of Selangor
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([3.0, 101.5], 10); // Centered on Selangor
 
-    // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
 
-    // Load campsite data from JSON
-    fetch('data.json')
-      .then(response => response.json())
-      .then(data => {
-        console.log('Loaded data:', data); // Log the loaded data
+        // Fetch the data from data.json
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Add markers to the map using the data
+                addMarkersToMap(data);
+            })
+            .catch(error => console.error('Error loading the data:', error));
 
-        data.forEach(campsite => {
-          console.log('Processing campsite:', campsite); // Log each campsite
+        // Function to add markers to the map
+        function addMarkersToMap(campsites) {
+            campsites.forEach(campsite => {
+                // Create the popup content
+                var popupContent = `
+                    <b>Name:</b> ${campsite.Name}<br>
+                    <b>Location:</b> ${campsite.Location}<br>
+                    <b>Address:</b> ${campsite.Address}<br>
+                    <b>Contact:</b> ${campsite.ContactNumber}
+                `;
 
-          // Validate latitude and longitude
-          const lat = parseFloat(campsite.Latitude);
-          const lng = parseFloat(campsite.Longitude);
-
-          if (isNaN(lat) || isNaN(lng)) {
-            console.error(`Invalid coordinates for ${campsite.Name}: Latitude=${lat}, Longitude=${lng}`);
-            return;
-          }
-
-          function addMarkersToMap(campsites) {
-    campsites.forEach(campsite => {
-        // Extract the video ID from the YouTube link
-        let videoUrl = campsite.YoutubeLinks;
-        let videoId = "";
-        
-        if (videoUrl.includes("v=")) {
-            // Extract the video ID from the URL
-            videoId = videoUrl.split("v=")[1];
-            
-            // Sometimes there are extra parameters after the video ID (like &t=...), so we split again
-            videoId = videoId.split("&")[0];
+                // Add a marker to the map
+                L.marker([campsite.Latitude, campsite.Longitude])
+                    .addTo(map)
+                    .bindPopup(popupContent); // Show the popup with the info
+            });
         }
-
-        // Construct the embed link
-        let embedLink = `https://www.youtube.com/embed/${videoId}`;
-
-        // Create the popup content
-        var popupContent = `
-            <b>Name:</b> ${campsite.Name}<br>
-            <b>Location:</b> ${campsite.Location}<br>
-            <b>Address:</b> ${campsite.Address}<br>
-            <b>Contact:</b> ${campsite.ContactNumber}<br>
-            <b>Video:</b><br>
-            <iframe width="200" height="150" src="${embedLink}" frameborder="0" allowfullscreen></iframe>
-        `;
-
-        // Add a marker to the map
-        L.marker([campsite.Latitude, campsite.Longitude])
-            .addTo(map)
-            .bindPopup(popupContent); // Show the popup with the info and video
-    });
-}
-
-          // Add a marker for each campsite
-          const marker = L.marker([lat, lng]).addTo(map);
-
-          // Handle Name safely
-          const name = campsite.Name ? campsite.Name : 'Unnamed Campsite';
-
-          // Handle Address safely
-          const address = campsite.Address ? campsite.Address : 'Address not available';
-
-          // Handle ContactNumber safely
-          const contactNumber = campsite.ContactNumber ? campsite.ContactNumber : 'Contact number not available';
-
-          // Handle YouTubeLinks safely
-          let youtubeLinksHtml = '';
-          if (campsite.YouTubeLinks && typeof campsite.YouTubeLinks === 'string') {
-            youtubeLinksHtml = campsite.YouTubeLinks.split(',').map(link => `<a href="${link.trim()}" target="_blank">${link.trim()}</a>`).join('<br>');
-          } else {
-            youtubeLinksHtml = 'No YouTube videos available';
-          }
-
-          // Create popup content
-          const popupContent = `
-            <strong>${name}</strong><br>
-            Address: ${address}<br>
-            Contact Number: ${contactNumber}<br>
-            Coordinates: ${lat}, ${lng}<br>
-            YouTube Videos:<br>${youtubeLinksHtml}
-          `;
-
-          // Bind popup to the marker
-          marker.bindPopup(popupContent);
-        });
-      })
-      .catch(error => console.error('Error loading data:', error));
-  </script>
+    </script>
 </body>
 </html>
