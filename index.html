@@ -9,21 +9,21 @@
     <style>
         #map { height: 600px; }
 
-        /* NEW CSS FOR SEARCH BOX */
-        #search-box {
-            margin: 10px;
-            padding: 10px;
-            width: 300px;
-        }
-        #search-button {
-            margin: 10px;
-            padding: 10px;
+        /* NEW: Style for labeled markers */
+        .labeled-marker {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 5px 10px; /* Padding around the text */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 12px; /* Font size */
+            text-align: center; /* Center the text */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for better visibility */
         }
     </style>
 </head>
 <body>
 
-    <!-- NEW SEARCH BOX -->
+    <!-- Search Box -->
     <div>
         <input type="text" id="search-box" placeholder="Search by name or address...">
         <button id="search-button">Search</button>
@@ -47,7 +47,7 @@
         fetch('data.json')
             .then(response => response.json())
             .then(data => {
-                // NEW: Store the campsites globally so we can use them for searching
+                // Store the campsites globally so we can use them for searching
                 window.campsites = data;
 
                 // Add markers to the map using the data
@@ -66,14 +66,26 @@
                     <b>Contact:</b> ${campsite.ContactNumber}
                 `;
 
-                // Add a marker to the map
-                L.marker([campsite.Latitude, campsite.Longitude])
+                // NEW: Create a custom HTML marker with the campsite name
+                var customMarkerHtml = `
+                    <div class="labeled-marker">${campsite.Name}</div>
+                `;
+
+                // Use a divIcon to create a custom marker
+                var customMarker = L.divIcon({
+                    className: '', // No default Leaflet classes
+                    html: customMarkerHtml, // Use the custom HTML
+                    iconSize: [null, null] // Let the size be determined by the content
+                });
+
+                // Add the custom marker to the map
+                L.marker([campsite.Latitude, campsite.Longitude], { icon: customMarker })
                     .addTo(map)
                     .bindPopup(popupContent); // Show the popup with the info
             });
         }
 
-        // NEW: Search functionality
+        // Search functionality
         document.getElementById('search-button').addEventListener('click', () => {
             const query = document.getElementById('search-box').value.toLowerCase(); // Get the search query
             const results = window.campsites.filter(campsite => {
