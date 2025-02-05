@@ -35,9 +35,9 @@
 
         /* Responsive Map */
         #map {
-            height: 70vh; /* Adjusted height to leave space for results list */
+            height: 80vh; /* Adjusted height to leave space for search box */
             width: 100%; /* Full width */
-            z-index: 10; /* Ensure map stays below other elements */
+            z-index: 10; /* Lower z-index to allow overlay */
         }
 
         /* Loading Spinner */
@@ -97,14 +97,19 @@
 
         /* Results List */
         #results-list {
-            margin-top: 10px; /* Space between search box and results list */
-            padding: 10px;
+            position: absolute; /* Overlay on top of the map */
+            top: 60px; /* Position below the search box */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            width: 320px; /* Fixed width */
+            max-height: 200px; /* Limit height */
+            overflow-y: auto; /* Enable scrolling */
             background: white;
             border: 1px solid #ddd;
-            max-height: 150px;
-            overflow-y: auto;
-            z-index: 100; /* Ensure it stays above the map */
-            position: relative; /* Keep it in the normal flow */
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+            z-index: 1000; /* Ensure it stays above the map */
+            padding: 10px;
         }
 
         /* Result Item Styling */
@@ -192,7 +197,7 @@
     <div id="map"></div>
 
     <!-- Results List -->
-    <div id="results-list"></div>
+    <div id="results-list" style="display: none;"></div> <!-- Initially hidden -->
 
     <!-- Legend -->
     <div id="legend">
@@ -351,6 +356,7 @@
             // Clear previous results
             const resultsList = document.getElementById('results-list');
             resultsList.innerHTML = '';
+            resultsList.style.display = 'none'; // Hide initially
 
             if (results.length > 0) {
                 // Display all matching results in the list
@@ -374,12 +380,19 @@
 
                         // Open the popup for the marker
                         marker.openPopup();
+
+                        // Hide the results list after selection
+                        resultsList.style.display = 'none';
                     });
 
                     resultsList.appendChild(resultItem);
                 });
+
+                // Show the results list
+                resultsList.style.display = 'block';
             } else {
                 resultsList.innerHTML = '<p>No matching campsites found.</p>';
+                resultsList.style.display = 'block';
             }
         });
 
