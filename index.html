@@ -43,8 +43,14 @@
           // Add a marker for each campsite
           const marker = L.marker([lat, lng]).addTo(map);
 
+          // Handle Name safely
+          const name = campsite.Name ? campsite.Name : 'Unnamed Campsite';
+
           // Handle Address safely
           const address = campsite.Address ? campsite.Address : 'Address not available';
+
+          // Handle ContactNumber safely
+          const contactNumber = campsite.ContactNumber ? campsite.ContactNumber : 'Contact number not available';
 
           // Handle YouTubeLinks safely
           let youtubeLinksHtml = '';
@@ -56,8 +62,9 @@
 
           // Create popup content
           const popupContent = `
-            <strong>${campsite.Name}</strong><br>
+            <strong>${name}</strong><br>
             Address: ${address}<br>
+            Contact Number: ${contactNumber}<br>
             Coordinates: ${lat}, ${lng}<br>
             YouTube Videos:<br>${youtubeLinksHtml}
           `;
