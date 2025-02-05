@@ -78,6 +78,30 @@
         .result-item:hover {
             background-color: #f0f0f0; /* Highlight on hover */
         }
+
+        /* Navigation Buttons Styling */
+        .nav-button {
+            display: inline-block;
+            margin: 5px 0;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .google-maps {
+            background-color: #4285F4; /* Google Maps blue */
+        }
+
+        .waze {
+            background-color: #FFCB05; /* Waze yellow */
+            color: black;
+        }
+
+        .apple-maps {
+            background-color: #000; /* Apple Maps black */
+        }
     </style>
 </head>
 <body>
@@ -148,12 +172,29 @@
         // Function to add markers to the map
         function addMarkersToMap(campsites) {
             campsites.forEach(campsite => {
-                // Create the popup content
+                // Create the popup content with multiple navigation buttons
                 var popupContent = `
                     <b>Name:</b> ${campsite.Name}<br>
                     <b>Location:</b> ${campsite.Location}<br>
                     <b>Address:</b> ${campsite.Address}<br>
-                    <b>Contact:</b> ${campsite.ContactNumber}
+                    <b>Contact:</b> ${campsite.ContactNumber}<br>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=${campsite.Latitude},${campsite.Longitude}" 
+                           target="_blank" 
+                           class="nav-button google-maps">
+                            Get Directions (Google Maps)
+                        </a><br>
+                        <a href="https://waze.com/ul?ll=${campsite.Latitude},${campsite.Longitude}&navigate=yes" 
+                           target="_blank" 
+                           class="nav-button waze">
+                            Get Directions (Waze)
+                        </a><br>
+                        <a href="http://maps.apple.com/?daddr=${campsite.Latitude},${campsite.Longitude}" 
+                           target="_blank" 
+                           class="nav-button apple-maps">
+                            Get Directions (Apple Maps)
+                        </a>
+                    </div>
                 `;
 
                 // Determine the marker color based on location
