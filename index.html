@@ -118,7 +118,14 @@
         }).addTo(map);
 
         // Create a marker cluster group
-        var markerCluster = L.markerClusterGroup();
+        var markerCluster = L.markerClusterGroup({
+            spiderfyOnMaxZoom: true, // Enable spiderfying markers when zoomed in
+            showCoverageOnHover: false, // Disable showing coverage area on hover
+            zoomToBoundsOnClick: true // Zoom to bounds of cluster on click
+        });
+
+        // Store markers globally so we can reference them later
+        var markers = {};
 
         // Fetch the data from data.json
         fetch('data.json')
@@ -178,6 +185,9 @@
                     .bindPopup(popupContent); // Show the popup with the info
 
                 markerCluster.addLayer(marker); // Add the marker to the cluster group
+
+                // Store the marker globally for easy access during search
+                markers[campsite.Name] = marker;
             });
 
             // Add the marker cluster group to the map
@@ -215,8 +225,13 @@
 
                     // Add click event to zoom to the campsite
                     resultItem.addEventListener('click', () => {
-                        map.setView([result.Latitude, result.Longitude], 15); // Zoom in to the location
-                        alert(`Zoomed to: ${result.Name}`);
+                        const marker = markers[result.Name]; // Get the marker for the selected campsite
+
+                        // Zoom directly to the marker
+                        map.setView([result.Latitude, result.Longitude], 18); // Higher zoom level for micro-zoom
+
+                        // Open the popup for the marker
+                        marker.openPopup();
                     });
 
                     resultsList.appendChild(resultItem);
