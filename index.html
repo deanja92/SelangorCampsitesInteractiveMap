@@ -12,27 +12,21 @@
     <style>
         #map { height: 600px; }
 
-        /* Style for labeled markers */
+        /* Style for labeled markers (just text) */
         .labeled-marker {
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 14px; /* Adjust font size */
+            font-weight: bold; /* Make text bold */
+            color: #333; /* Dark gray text */
+            text-shadow: 1px 1px 2px white; /* Add a subtle shadow for better readability */
             cursor: pointer; /* Pointer cursor for hover effect */
         }
 
         /* Hover effect for markers */
         .labeled-marker:hover {
-            transform: scale(1.1); /* Slightly enlarge the marker on hover */
-            transition: transform 0.2s ease-in-out; /* Smooth transition */
+            color: #007BFF; /* Change text color on hover */
+            transform: scale(1.1); /* Slightly enlarge the text on hover */
+            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth transition */
         }
-
-        /* Marker colors based on location */
-        .park { background-color: #4CAF50; color: white; } /* Green for parks */
-        .lake { background-color: #2196F3; color: white; } /* Blue for lakeside */
-        .forest { background-color: #8BC34A; color: white; } /* Light green for forests */
-        .default { background-color: #FF9800; color: white; } /* Orange for others */
     </style>
 </head>
 <body>
@@ -85,19 +79,9 @@
                     <b>Contact:</b> ${campsite.ContactNumber}
                 `;
 
-                // Determine the marker color based on location
-                let markerClass = 'default'; // Default color
-                if (campsite.Location.toLowerCase().includes('park')) {
-                    markerClass = 'park';
-                } else if (campsite.Location.toLowerCase().includes('lake')) {
-                    markerClass = 'lake';
-                } else if (campsite.Location.toLowerCase().includes('forest')) {
-                    markerClass = 'forest';
-                }
-
-                // Create a custom HTML marker with the campsite name and color
+                // Create a custom HTML marker with just the campsite name (no box)
                 var customMarkerHtml = `
-                    <div class="labeled-marker ${markerClass}">${campsite.Name}</div>
+                    <div class="labeled-marker">${campsite.Name}</div>
                 `;
 
                 // Use a divIcon to create a custom marker
