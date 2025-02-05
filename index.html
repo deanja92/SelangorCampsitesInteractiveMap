@@ -16,7 +16,7 @@
     <style>
         /* Responsive Map */
         #map {
-            height: 100vh; /* Full viewport height */
+            height: 70vh; /* Adjusted height to leave space for results list */
             width: 100%; /* Full width */
         }
 
@@ -58,6 +58,26 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
             z-index: 1000; /* Ensure it stays above the map */
         }
+
+        /* Results List */
+        #results-list {
+            margin-top: 10px;
+            padding: 10px;
+            background: white;
+            border: 1px solid #ddd;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        /* Result Item Styling */
+        .result-item {
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .result-item:hover {
+            background-color: #f0f0f0; /* Highlight on hover */
+        }
     </style>
 </head>
 <body>
@@ -70,6 +90,9 @@
 
     <!-- Map -->
     <div id="map"></div>
+
+    <!-- Results List -->
+    <div id="results-list"></div>
 
     <!-- Legend -->
     <div id="legend">
@@ -179,25 +202,27 @@
                 return campsite.Name.toLowerCase().includes(query) || campsite.Address.toLowerCase().includes(query);
             });
 
+            // Clear previous results
+            const resultsList = document.getElementById('results-list');
+            resultsList.innerHTML = '';
+
             if (results.length > 0) {
-                // Zoom to the first result (you can modify this to handle multiple results)
-                const firstResult = results[0];
-                map.setView([firstResult.Latitude, firstResult.Longitude], 15); // Zoom in to the location
+                // Display all matching results in the list
+                results.forEach(result => {
+                    const resultItem = document.createElement('div');
+                    resultItem.className = 'result-item';
+                    resultItem.textContent = result.Name;
 
-                // Highlight the matching marker
-                markerCluster.eachLayer(layer => {
-                    if (layer.getLatLng().lat === firstResult.Latitude && layer.getLatLng().lng === firstResult.Longitude) {
-                        layer.setIcon(L.divIcon({
-                            className: '',
-                            html: `<div class="labeled-marker" style="color: red; font-weight: bold;"><i class="fas fa-campground"></i> ${firstResult.Name}</div>`,
-                            iconSize: [null, null]
-                        }));
-                    }
+                    // Add click event to zoom to the campsite
+                    resultItem.addEventListener('click', () => {
+                        map.setView([result.Latitude, result.Longitude], 15); // Zoom in to the location
+                        alert(`Zoomed to: ${result.Name}`);
+                    });
+
+                    resultsList.appendChild(resultItem);
                 });
-
-                alert(`Found: ${firstResult.Name}`);
             } else {
-                alert('No matching campsites found.');
+                resultsList.innerHTML = '<p>No matching campsites found.</p>';
             }
         });
     </script>
