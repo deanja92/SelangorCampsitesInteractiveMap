@@ -97,12 +97,14 @@
 
         /* Results List */
         #results-list {
-            margin-top: 10px;
+            margin-top: 10px; /* Space between search box and results list */
             padding: 10px;
             background: white;
             border: 1px solid #ddd;
             max-height: 150px;
             overflow-y: auto;
+            z-index: 1500; /* Ensure it stays above the map */
+            position: relative; /* Keep it in the normal flow */
         }
 
         /* Result Item Styling */
