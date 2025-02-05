@@ -21,7 +21,7 @@
         #controls { display: flex; justify-content: center; padding: 10px; gap: 10px; z-index: 2; position: relative; }
         #results-list {
             position: absolute;
-            top: 50px;
+            top: 100px;
             left: 50%;
             transform: translateX(-50%);
             width: 300px;
@@ -31,9 +31,20 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
+            z-index: 1002;
             padding: 10px;
             display: none;
+        }
+        .result-item {
+            padding: 8px;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .result-item:hover {
+            background-color: #f0f0f0;
         }
         .error-message { color: red; text-align: center; display: none; }
     </style>
@@ -73,7 +84,9 @@
             results.forEach(result => {
                 let item = document.createElement('div');
                 item.className = 'result-item';
-                item.textContent = result.Name;
+                item.innerHTML = `<b>${result.Name}</b><br>
+                                  <b>Contact:</b> ${result.ContactNumber}<br>
+                                  <a href='https://www.google.com/maps/dir/?api=1&destination=${result.Latitude},${result.Longitude}' target='_blank'>Get Directions</a>`;
                 item.addEventListener('click', () => {
                     map.setView([result.Latitude, result.Longitude], 15);
                     markers[result.Name].openPopup();
