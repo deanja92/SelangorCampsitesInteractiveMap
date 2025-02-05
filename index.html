@@ -6,15 +6,34 @@
     <title>Campsites Map</title>
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <style>
         #map { height: 600px; }
+
+        /* NEW CSS FOR SEARCH BOX */
+        #search-box {
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+        }
+        #search-button {
+            margin: 10px;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
+
+    <!-- NEW SEARCH BOX -->
+    <div>
+        <input type="text" id="search-box" placeholder="Search by name or address...">
+        <button id="search-button">Search</button>
+    </div>
+
+    <!-- Map -->
     <div id="map"></div>
 
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
         // Initialize the map
         var map = L.map('map').setView([3.0, 101.5], 10); // Centered on Selangor
@@ -28,6 +47,9 @@
         fetch('data.json')
             .then(response => response.json())
             .then(data => {
+                // NEW: Store the campsites globally so we can use them for searching
+                window.campsites = data;
+
                 // Add markers to the map using the data
                 addMarkersToMap(data);
             })
@@ -50,6 +72,24 @@
                     .bindPopup(popupContent); // Show the popup with the info
             });
         }
+
+        // NEW: Search functionality
+        document.getElementById('search-button').addEventListener('click', () => {
+            const query = document.getElementById('search-box').value.toLowerCase(); // Get the search query
+            const results = window.campsites.filter(campsite => {
+                // Check if the query matches the name or address (case-insensitive)
+                return campsite.Name.toLowerCase().includes(query) || campsite.Address.toLowerCase().includes(query);
+            });
+
+            if (results.length > 0) {
+                // Zoom to the first result (you can modify this to handle multiple results)
+                const firstResult = results[0];
+                map.setView([firstResult.Latitude, firstResult.Longitude], 15); // Zoom in to the location
+                alert(`Found: ${firstResult.Name}`);
+            } else {
+                alert('No matching campsites found.');
+            }
+        });
     </script>
 </body>
 </html>
