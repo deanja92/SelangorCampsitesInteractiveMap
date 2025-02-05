@@ -6,19 +6,33 @@
     <title>Campsites Map</title>
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Leaflet.markercluster CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <style>
         #map { height: 600px; }
 
-        /* NEW: Style for labeled markers */
+        /* Style for labeled markers */
         .labeled-marker {
-            background-color: #4CAF50; /* Green background */
-            color: white; /* White text */
-            padding: 5px 10px; /* Padding around the text */
-            border-radius: 5px; /* Rounded corners */
-            font-size: 12px; /* Font size */
-            text-align: center; /* Center the text */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for better visibility */
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer; /* Pointer cursor for hover effect */
         }
+
+        /* Hover effect for markers */
+        .labeled-marker:hover {
+            transform: scale(1.1); /* Slightly enlarge the marker on hover */
+            transition: transform 0.2s ease-in-out; /* Smooth transition */
+        }
+
+        /* Marker colors based on location */
+        .park { background-color: #4CAF50; color: white; } /* Green for parks */
+        .lake { background-color: #2196F3; color: white; } /* Blue for lakeside */
+        .forest { background-color: #8BC34A; color: white; } /* Light green for forests */
+        .default { background-color: #FF9800; color: white; } /* Orange for others */
     </style>
 </head>
 <body>
@@ -34,6 +48,8 @@
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Leaflet.markercluster JS -->
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
     <script>
         // Initialize the map
         var map = L.map('map').setView([3.0, 101.5], 10); // Centered on Selangor
@@ -42,6 +58,9 @@
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors'
         }).addTo(map);
+
+        // Create a marker cluster group
+        var markerCluster = L.markerClusterGroup();
 
         // Fetch the data from data.json
         fetch('data.json')
@@ -66,9 +85,19 @@
                     <b>Contact:</b> ${campsite.ContactNumber}
                 `;
 
-                // NEW: Create a custom HTML marker with the campsite name
+                // Determine the marker color based on location
+                let markerClass = 'default'; // Default color
+                if (campsite.Location.toLowerCase().includes('park')) {
+                    markerClass = 'park';
+                } else if (campsite.Location.toLowerCase().includes('lake')) {
+                    markerClass = 'lake';
+                } else if (campsite.Location.toLowerCase().includes('forest')) {
+                    markerClass = 'forest';
+                }
+
+                // Create a custom HTML marker with the campsite name and color
                 var customMarkerHtml = `
-                    <div class="labeled-marker">${campsite.Name}</div>
+                    <div class="labeled-marker ${markerClass}">${campsite.Name}</div>
                 `;
 
                 // Use a divIcon to create a custom marker
@@ -78,11 +107,15 @@
                     iconSize: [null, null] // Let the size be determined by the content
                 });
 
-                // Add the custom marker to the map
-                L.marker([campsite.Latitude, campsite.Longitude], { icon: customMarker })
-                    .addTo(map)
+                // Add the custom marker to the marker cluster group
+                var marker = L.marker([campsite.Latitude, campsite.Longitude], { icon: customMarker })
                     .bindPopup(popupContent); // Show the popup with the info
+
+                markerCluster.addLayer(marker); // Add the marker to the cluster group
             });
+
+            // Add the marker cluster group to the map
+            map.addLayer(markerCluster);
         }
 
         // Search functionality
