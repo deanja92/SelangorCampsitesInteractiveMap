@@ -37,7 +37,7 @@
         #map {
             height: 70vh; /* Adjusted height to leave space for results list */
             width: 100%; /* Full width */
-            transition: filter 0.3s ease-in-out;
+            z-index: 10; /* Ensure map stays below other elements */
         }
 
         /* Loading Spinner */
@@ -103,7 +103,7 @@
             border: 1px solid #ddd;
             max-height: 150px;
             overflow-y: auto;
-            z-index: 1500; /* Ensure it stays above the map */
+            z-index: 100; /* Ensure it stays above the map */
             position: relative; /* Keep it in the normal flow */
         }
 
