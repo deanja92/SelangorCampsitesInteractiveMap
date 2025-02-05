@@ -14,49 +14,85 @@
     <!-- Awesomplete for Autocomplete -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.css">
     <style>
+        /* Gradient Background */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background: linear-gradient(135deg, #121212, #1e1e1e);
+            color: #fff;
+        }
+
+        body.dark-mode #map {
+            filter: brightness(0.8);
+        }
+
         /* Responsive Map */
         #map {
             height: 70vh; /* Adjusted height to leave space for results list */
             width: 100%; /* Full width */
+            transition: filter 0.3s ease-in-out;
         }
 
-        /* Style for labeled markers (just text with icons) */
-        .labeled-marker {
-            font-size: 14px; /* Adjust font size */
-            font-weight: bold; /* Make text bold */
-            color: #333; /* Dark gray text */
-            text-shadow: 1px 1px 2px white; /* Add a subtle shadow for better readability */
-            cursor: pointer; /* Pointer cursor for hover effect */
-        }
-
-        /* Hover effect for markers */
-        .labeled-marker:hover {
-            color: #007BFF; /* Change text color on hover */
-            transform: scale(1.1); /* Slightly enlarge the text on hover */
-            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth transition */
-        }
-
-        /* Customize cluster appearance */
-        .cluster {
-            background-color: #007BFF; /* Blue background */
-            color: white; /* White text */
-            border-radius: 50%; /* Circular shape */
-            font-size: 16px; /* Larger font for numbers */
-            font-weight: bold;
-            padding: 10px; /* Padding around the number */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for better visibility */
-        }
-
-        /* Legend Styling */
-        #legend {
+        /* Loading Spinner */
+        #loading-spinner {
             position: absolute;
-            top: 20px; /* Moved to the top-right corner */
-            right: 20px; /* Moved to the top-right corner */
-            background: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #007BFF;
+            z-index: 2000;
+        }
+
+        /* Search Box and Button */
+        #search-box {
+            width: 300px;
             padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            z-index: 1000; /* Ensure it stays above the map */
+            border: 2px solid #007BFF;
+            border-radius: 25px;
+            outline: none;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        #search-box:focus {
+            border-color: #0056b3;
+        }
+
+        #search-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #search-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Theme Toggle Button */
+        #theme-toggle {
+            margin-left: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #theme-toggle:hover {
+            background-color: #218838;
         }
 
         /* Results List */
@@ -73,10 +109,29 @@
         .result-item {
             cursor: pointer;
             padding: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
         }
 
         .result-item:hover {
-            background-color: #f0f0f0; /* Highlight on hover */
+            background-color: #f0f0f0;
+        }
+
+        .result-item.active {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        /* Legend Styling */
+        #legend {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
         }
 
         /* Navigation Buttons Styling */
@@ -102,14 +157,32 @@
         .apple-maps {
             background-color: #000; /* Apple Maps black */
         }
+
+        /* Marker Fade-In Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .marker-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
     </style>
 </head>
-<body>
+<body class="light-mode">
+
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" style="display: none;">Loading...</div>
 
     <!-- Search Box -->
-    <div style="margin-bottom: 10px;">
+    <div style="margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
         <input type="text" id="search-box" placeholder="Search by name or address...">
         <button id="search-button">Search</button>
+        <button id="theme-toggle">Toggle Dark Mode</button>
     </div>
 
     <!-- Map -->
@@ -125,6 +198,13 @@
         <p><span style="color: #8BC34A; font-weight: bold;">●</span> Forest</p>
         <p><span style="color: #FF9800; font-weight: bold;">●</span> Other</p>
     </div>
+
+    <!-- Footer -->
+    <footer style="text-align: center; margin-top: 20px; font-size: 12px; color: #666;">
+        Powered by <a href="https://leafletjs.com/" target="_blank">Leaflet</a> and 
+        <a href="https://openstreetmap.org/" target="_blank">OpenStreetMap</a>. 
+        Icons by <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.
+    </footer>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -151,11 +231,15 @@
         // Store markers globally so we can reference them later
         var markers = {};
 
+        // Show loading spinner before fetching data
+        document.getElementById('loading-spinner').style.display = 'block';
+
         // Fetch the data from data.json
         fetch('data.json')
             .then(response => response.json())
             .then(data => {
-                // Store the campsites globally so we can use them for searching
+                // Hide loading spinner after data is loaded
+                document.getElementById('loading-spinner').style.display = 'none';
                 window.campsites = data;
 
                 // Add autocomplete suggestions to the search box
@@ -167,7 +251,10 @@
                 // Add markers to the map using the data
                 addMarkersToMap(data);
             })
-            .catch(error => console.error('Error loading the data:', error));
+            .catch(error => {
+                console.error('Error loading the data:', error);
+                document.getElementById('loading-spinner').style.display = 'none';
+            });
 
         // Function to add markers to the map
         function addMarkersToMap(campsites) {
@@ -209,8 +296,8 @@
 
                 // Create a custom HTML marker with an icon and the campsite name
                 var customMarkerHtml = `
-                    <div class="labeled-marker" style="color: ${getColor(markerClass)};">
-                        <i class="fas fa-campground"></i> ${campsite.Name}
+                    <div class="labeled-marker">
+                        <i class="fas fa-campground" style="color: ${getColor(markerClass)};"></i>
                     </div>
                 `;
 
@@ -226,6 +313,11 @@
                     .bindPopup(popupContent); // Show the popup with the info
 
                 markerCluster.addLayer(marker); // Add the marker to the cluster group
+
+                // Add fade-in animation to the marker
+                marker.on('add', () => {
+                    L.DomUtil.addClass(marker._icon, 'marker-fade-in');
+                });
 
                 // Store the marker globally for easy access during search
                 markers[campsite.Name] = marker;
@@ -266,6 +358,12 @@
 
                     // Add click event to zoom to the campsite
                     resultItem.addEventListener('click', () => {
+                        // Remove active class from all items
+                        document.querySelectorAll('.result-item').forEach(item => item.classList.remove('active'));
+
+                        // Add active class to the clicked item
+                        resultItem.classList.add('active');
+
                         const marker = markers[result.Name]; // Get the marker for the selected campsite
 
                         // Zoom directly to the marker
@@ -280,6 +378,13 @@
             } else {
                 resultsList.innerHTML = '<p>No matching campsites found.</p>';
             }
+        });
+
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
         });
     </script>
 </body>
